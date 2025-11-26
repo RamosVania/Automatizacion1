@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Tienda NovaTech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-indigo-700 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold">Tienda NovaTech</h1>
+    <p class="mt-1 text-indigo-200">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
+  </header>
+  <main class="p-6 max-w-7xl mx-auto">
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <!-- Card módulo catálogo de productos -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+        <div class="flex items-center space-x-4 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+          <h2 class="text-xl font-semibold text-gray-900">Catálogo de Productos</h2>
+        </div>
+        <p class="text-gray-700 flex-grow">Explora y administra todos los productos disponibles en la tienda.</p>
+        <a href="modules/product-catalog/index.html" class="mt-6 inline-block text-indigo-700 font-semibold hover:underline">Ir al módulo</a>
+      </article>
+
+      <!-- Card módulo pagos y checkout -->
+      <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+        <div class="flex items-center space-x-4 mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v4m0 0h3m-3 0H9" />
+          </svg>
+          <h2 class="text-xl font-semibold text-gray-900">Pagos y Checkout</h2>
+        </div>
+        <p class="text-gray-700 flex-grow">Gestiona los procesos de pago y finalización de compra de forma segura.</p>
+        <a href="modules/checkout-payments/index.html" class="mt-6 inline-block text-indigo-700 font-semibold hover:underline">Ir al módulo</a>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
