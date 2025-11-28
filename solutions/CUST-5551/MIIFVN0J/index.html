@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Tienda NovaTech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen text-gray-900">
+  <header class="bg-white bg-opacity-90 shadow-md py-6">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-indigo-700">Tienda NovaTech</h1>
+      <p class="text-lg italic text-indigo-600">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-10">
+    <h2 class="text-2xl font-semibold mb-8 text-white drop-shadow-lg">Panel de Módulos</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <article class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img src="https://img.icons8.com/ios-filled/100/4a90e2/product.png" alt="Catálogo de Productos" class="mb-4 w-20 h-20" aria-hidden="true" />
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Catálogo de Productos</h3>
+        <p class="text-gray-700">Explora y administra el catálogo completo de productos disponibles en Tienda NovaTech.</p>
+        <a href="modules/product-catalog/index.html" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition">Entrar</a>
+      </article>
+
+      <article class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img src="https://img.icons8.com/ios-filled/100/4a90e2/shopping-cart.png" alt="Checkout y Pagos" class="mb-4 w-20 h-20" aria-hidden="true" />
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Checkout y Pagos</h3>
+        <p class="text-gray-700">Gestiona el proceso de compra y los métodos de pago de manera segura y eficiente.</p>
+        <a href="modules/checkout-payments/index.html" class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition">Entrar</a>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
