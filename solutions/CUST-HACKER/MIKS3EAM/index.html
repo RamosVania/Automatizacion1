@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 min-h-screen text-gray-100">
+  <header class="bg-black bg-opacity-40 backdrop-blur-md py-6 shadow-md">
+    <div class="container mx-auto px-6">
+      <h1 class="text-3xl font-extrabold">&lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</h1>
+      <p class="mt-1 text-lg opacity-80">¡Hola! Bienvenido a &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</p>
+    </div>
+  </header>
+  <main class="container mx-auto px-6 py-10">
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <article class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Icono Catálogo de Productos" class="w-20 h-20 mb-4" />
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">Catálogo de Productos</h2>
+        <p class="text-gray-700">Explora y administra el catálogo completo de productos disponibles.</p>
+        <a href="modules/product-catalog/index.html" class="mt-4 inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded transition">Entrar</a>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
