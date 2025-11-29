@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 min-h-screen text-gray-900">
+  <header class="bg-white bg-opacity-90 shadow-md p-6 flex items-center justify-between">
+    <h1 class="text-2xl font-bold">&lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</h1>
+    <nav aria-label="Navegación principal">
+      <a href="login.html" class="text-purple-700 hover:underline font-semibold">Cerrar sesión</a>
+    </nav>
+  </header>
+  <main class="p-8 max-w-7xl mx-auto">
+    <h2 class="text-xl font-semibold mb-6">¡Hola! Bienvenido a &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</h2>
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <article class="bg-white bg-opacity-90 rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition cursor-pointer" tabindex="0" role="button" onclick="location.href='modules/product-catalog/index.html'" onkeypress="if(event.key==='Enter'){location.href='modules/product-catalog/index.html'}">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+        </svg>
+        <h3 class="text-lg font-bold mb-2">Catálogo de Productos</h3>
+        <p class="text-gray-700">Administra y visualiza los productos disponibles.</p>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
