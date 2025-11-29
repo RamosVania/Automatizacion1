@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 min-h-screen text-gray-100">
+  <header class="bg-black bg-opacity-40 backdrop-blur-md py-6 shadow-md flex items-center justify-between px-6">
+    <h1 class="text-2xl font-extrabold">Catálogo de Productos</h1>
+    <a href="../../index.html" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded transition">Volver</a>
+  </header>
+  <main class="container mx-auto px-6 py-10">
+    <p class="text-lg bg-white bg-opacity-90 rounded p-6 shadow text-gray-900">Aquí podrás explorar y administrar el catálogo completo de productos disponibles.</p>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = '../../login.html'; }
+  }catch(_){ location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
