@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>module_test - Null Pointer Inc</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml" />
+</head>
+<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 min-h-screen text-white">
+  <header class="bg-black bg-opacity-60 py-4 shadow-md">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">module_test</h1>
+      <a href="../../index.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition">Volver</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-6 py-10">
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Bienvenido al módulo de prueba</h2>
+      <p>Este módulo es un ejemplo para Null Pointer Inc. Aquí puedes agregar contenido específico del módulo.</p>
+    </section>
+  </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = '../../login.html'; }
+  }catch(_){ location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
