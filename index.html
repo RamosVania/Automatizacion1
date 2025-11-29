@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-indigo-700 text-white p-6 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-2xl font-bold truncate">&lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</h1>
+      <p class="text-sm opacity-80">¡Hola! Bienvenido a &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</p>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-6 text-gray-800">Módulos</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Card módulo chatbot AI -->
+      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='./modules/module_chatbot_ai/index.html'" tabindex="0" role="button" aria-pressed="false" onkeydown="if(event.key==='Enter'){this.click();}">
+        <div class="flex items-center justify-center mb-4">
+          <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6M12 14v2m0 0v2m0-2h-1m1 0h1" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12c0 2.21.9 4.21 2.35 5.65L3 21l3.35-2.35A7.963 7.963 0 0012 21c4.97 0 9-4.03 9-9z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Chatbot AI</h3>
+        <p class="text-gray-600">Interactúa con nuestro asistente inteligente para resolver tus dudas y mejorar tu experiencia.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
