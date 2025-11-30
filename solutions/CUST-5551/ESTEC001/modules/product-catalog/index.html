@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - Tienda NovaTech</title>
+  
+</head>
+<body class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 min-h-screen text-white">
+  <header class="bg-black bg-opacity-60 p-4 flex items-center justify-between">
+    <h1 class="text-3xl font-bold">Catálogo de Productos</h1>
+    <button onclick="window.history.back()" class="bg-indigo-700 hover:bg-indigo-800 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">Volver</button>
+  </header>
+  <main class="p-6 max-w-5xl mx-auto">
+    <p class="mb-4 text-lg">Aquí podrás explorar y administrar todos los productos disponibles en la tienda.</p>
+    <section aria-label="Lista de productos">
+      <ul class="space-y-3">
+        <li class="bg-white bg-opacity-20 rounded-lg p-4">Producto 1: Descripción breve del producto.</li>
+        <li class="bg-white bg-opacity-20 rounded-lg p-4">Producto 2: Descripción breve del producto.</li>
+        <li class="bg-white bg-opacity-20 rounded-lg p-4">Producto 3: Descripción breve del producto.</li>
+      </ul>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
