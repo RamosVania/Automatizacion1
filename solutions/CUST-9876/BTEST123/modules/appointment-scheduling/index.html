@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agenda de Citas - Clínica Dental Sonrisa Perfecta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="bg-teal-600 text-white p-6 shadow-md flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Agenda de Citas</h1>
+        <a href="../../index.html" class="bg-white text-teal-600 px-4 py-2 rounded hover:bg-teal-100 transition">Volver</a>
+    </header>
+    <main class="flex-grow p-6 max-w-4xl mx-auto">
+        <section>
+            <h2 class="text-xl font-semibold mb-4 text-teal-700">Gestión de citas dentales</h2>
+            <p class="mb-6 text-gray-700">Aquí podrás gestionar y programar tus citas dentales de forma sencilla y rápida.</p>
+            <img src="../../assets/appointment.svg" alt="Icono de agenda de citas" class="w-24 h-24 mb-6" />
+            <!-- Contenido adicional del módulo podría ir aquí -->
+        </section>
+    </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
