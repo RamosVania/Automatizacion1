@@ -1,42 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
-<head><script src="https://cdn.tailwindcss.com"></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard -  Corp</title>
-  
-</head>
-<body class="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 min-h-screen text-gray-100">
-  <header class="bg-white bg-opacity-20 backdrop-blur-md shadow-md py-6">
-    <div class="container mx-auto px-6 flex items-center justify-between">
-      <h1 class="text-3xl font-extrabold"> Corp</h1>
-      <nav>
-        <a href="login.html" class="text-white hover:underline font-semibold">Cerrar sesión</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container mx-auto px-6 py-10">
-    <h2 class="text-2xl font-bold mb-8">¡Hola! Bienvenido a  Corp</h2>
-    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Card módulo catálogo de productos -->
-      <article class="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform cursor-pointer" tabindex="0" role="button" onclick="location.href='modules/product-catalog/index.html'" onkeypress="if(event.key==='Enter'){location.href='modules/product-catalog/index.html'}">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mb-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
-        </svg>
-        <h3 class="text-xl font-semibold mb-2">Catálogo de Productos</h3>
-        <p class="text-white/90">Explora y administra el catálogo de productos disponibles.</p>
-      </article>
-    </section>
-  </main>
-
-<script>
-(function () {
-  try {
-    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
-    if (!s || !s.user) { location.href = './login.html'; }
-  } catch (_) { location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+PHNjcmlw
+dCBzcmM9Imh0dHBzOi8vY2RuLnRhaWx3aW5kY3NzLmNvbSI+PC9zY3JpcHQ+
+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmll
+d3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1z
+Y2FsZT0xIiAvPgogIDx0aXRsZT5EYXNoYm9hcmQgLSAgQ29ycDwvdGl0bGU+
+CiAgCjwvaGVhZD4KPGJvZHkgY2xhc3M9ImJnLWdyYWRpZW50LXRvLXIgZnJv
+bS1wdXJwbGUtNjAwIHZpYS1waW5rLTYwMCB0by1yZWQtNjAwIG1pbi1oLXNj
+cmVlbiB0ZXh0LWdyYXktMTAwIj4KICA8aGVhZGVyIGNsYXNzPSJiZy13aGl0
+ZSBiZy1vcGFjaXR5LTIwIGJhY2tkcm9wLWJsdXItbWQgc2hhZG93LW1kIHB5
+LTYiPgogICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gcHgtNiBm
+bGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgICA8aDEg
+Y2xhc3M9InRleHQtM3hsIGZvbnQtZXh0cmFib2xkIj4gQ29ycDwvaDE+CiAg
+ICAgIDxuYXY+CiAgICAgICAgPGEgaHJlZj0ibG9naW4uaHRtbCIgY2xhc3M9
+InRleHQtd2hpdGUgaG92ZXI6dW5kZXJsaW5lIGZvbnQtc2VtaWJvbGQiPkNl
+cnJhciBzZXNpw7NuPC9hPgogICAgICA8L25hdj4KICAgIDwvZGl2PgogIDwv
+aGVhZGVyPgoKICA8bWFpbiBjbGFzcz0iY29udGFpbmVyIG14LWF1dG8gcHgt
+NiBweS0xMCI+CiAgICA8aDIgY2xhc3M9InRleHQtMnhsIGZvbnQtYm9sZCBt
+Yi04Ij7CoUhvbGEhIEJpZW52ZW5pZG8gYSAgQ29ycDwvaDI+CiAgICA8c2Vj
+dGlvbiBhcmlhLWxhYmVsPSJNw7NkdWxvcyBkaXNwb25pYmxlcyIgY2xhc3M9
+ImdyaWQgZ3JpZC1jb2xzLTEgc206Z3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xz
+LTMgZ2FwLTgiPgogICAgICA8IS0tIENhcmQgbcOzZHVsbyBjYXTDoWxvZ28g
+ZGUgcHJvZHVjdG9zIC0tPgogICAgICA8YXJ0aWNsZSBjbGFzcz0iYmctd2hp
+dGUgYmctb3BhY2l0eS0yMCBiYWNrZHJvcC1ibHVyLW1kIHJvdW5kZWQtbGcg
+c2hhZG93LWxnIHAtNiBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciB0ZXh0
+LWNlbnRlciBob3ZlcjpzY2FsZS0xMDUgdHJhbnNpdGlvbi10cmFuc2Zvcm0g
+Y3Vyc29yLXBvaW50ZXIiIHRhYmluZGV4PSIwIiByb2xlPSJidXR0b24iIG9u
+Y2xpY2s9ImxvY2F0aW9uLmhyZWY9J21vZHVsZXMvcHJvZHVjdC1jYXRhbG9n
+L2luZGV4Lmh0bWwnIiBvbmtleXByZXNzPSJpZihldmVudC5rZXk9PT0nRW50
+ZXInKXtsb2NhdGlvbi5ocmVmPSdtb2R1bGVzL3Byb2R1Y3QtY2F0YWxvZy9p
+bmRleC5odG1sJ30iPgogICAgICAgIDxzdmcgeG1sbnM9Imh0dHA6Ly93d3cu
+dzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0iaC0xNiB3LTE2IG1iLTQgdGV4dC13
+aGl0ZSIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHJva2U9
+ImN1cnJlbnRDb2xvciIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICAgICAg
+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49
+InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0zIDdoMThNMyAxMmgxOE0z
+IDE3aDE4IiAvPgogICAgICAgIDwvc3ZnPgogICAgICAgIDxoMyBjbGFzcz0i
+dGV4dC14bCBmb250LXNlbWlib2xkIG1iLTIiPkNhdMOhbG9nbyBkZSBQcm9k
+dWN0b3M8L2gzPgogICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXdoaXRlLzkwIj5F
+eHBsb3JhIHkgYWRtaW5pc3RyYSBlbCBjYXTDoWxvZ28gZGUgcHJvZHVjdG9z
+IGRpc3BvbmlibGVzLjwvcD4KICAgICAgPC9hcnRpY2xlPgogICAgPC9zZWN0
+aW9uPgogIDwvbWFpbj4KCjxzY3JpcHQ+CihmdW5jdGlvbiAoKSB7CiAgdHJ5
+IHsKICAgIGNvbnN0IHMgPSBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJ
+dGVtKCdtdnBfc2Vzc2lvbicpIHx8ICdudWxsJyk7CiAgICBpZiAoIXMgfHwg
+IXMudXNlcikgeyBsb2NhdGlvbi5ocmVmID0gJy4vbG9naW4uaHRtbCc7IH0K
+ICB9IGNhdGNoIChfKSB7IGxvY2F0aW9uLmhyZWYgPSAnLi9sb2dpbi5odG1s
+JzsgfQp9KSgpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+
