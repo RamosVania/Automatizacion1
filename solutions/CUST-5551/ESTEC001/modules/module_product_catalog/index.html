@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo de Catálogo de Productos - Tienda NovaTech</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md p-4">
+        <h1 class="text-lg font-bold text-gray-800">Módulo de Catálogo de Productos</h1>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="window.location.href='/index.html'">Volver</button>
+    </header>
+    <main class="max-w-md mx-auto p-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-lg font-bold text-gray-800 mb-4">Catálogo de Productos</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Producto 1</h3>
+                <p class="text-gray-600 text-sm mb-4">Descripción del producto 1</p>
+                <img src="/assets/logo.svg" alt="Logo de Tienda NovaTech" class="w-16 h-16 mb-4">
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Producto 2</h3>
+                <p class="text-gray-600 text-sm mb-4">Descripción del producto 2</p>
+                <img src="/assets/logo.svg" alt="Logo de Tienda NovaTech" class="w-16 h-16 mb-4">
+            </div>
+        </div>
+    </main>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
