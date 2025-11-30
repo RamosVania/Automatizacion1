@@ -1,52 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Iniciar Sesión - Corp</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
-  <main class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 w-full max-w-md">
-    <h1 class="text-2xl font-bold mb-6 text-center text-indigo-700">Iniciar Sesión</h1>
-    <form id="loginForm" class="space-y-6" novalidate>
-      <div>
-        <label for="username" class="block text-gray-700 font-semibold mb-1">Usuario</label>
-        <input type="text" id="username" name="username" required aria-required="true" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-      </div>
-      <div>
-        <label for="password" class="block text-gray-700 font-semibold mb-1">Contraseña</label>
-        <input type="password" id="password" name="password" required aria-required="true" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-      </div>
-      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded transition">Entrar</button>
-      <p id="errorMsg" class="text-red-600 mt-2 text-center hidden" role="alert"></p>
-    </form>
-  </main>
-  <script>
-    const form = document.getElementById('loginForm');
-    const errorMsg = document.getElementById('errorMsg');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      errorMsg.classList.add('hidden');
-      const username = form.username.value.trim();
-      const password = form.password.value.trim();
-
-      if (!username || !password) {
-        errorMsg.textContent = 'Por favor, complete todos los campos.';
-        errorMsg.classList.remove('hidden');
-        return;
-      }
-
-      // Validación básica: usuario 'user' y contraseña 'password123'
-      if (username === 'user' && password === 'password123') {
-        // Redirigir a dashboard
-        window.location.href = 'index.html';
-      } else {
-        errorMsg.textContent = 'Usuario o contraseña incorrectos.';
-        errorMsg.classList.remove('hidden');
-      }
-    });
-  </script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5JbmljaWFyIFNlc2nDs24gLSBDb3JwPC90aXRsZT4K
+ICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4udGFpbHdpbmRjc3MuY29tIj48
+L3NjcmlwdD4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iYmctZ3JhZGllbnQtdG8t
+ciBmcm9tLWluZGlnby01MDAgdmlhLXB1cnBsZS01MDAgdG8tcGluay01MDAg
+bWluLWgtc2NyZWVuIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVy
+Ij4KICA8bWFpbiBjbGFzcz0iYmctd2hpdGUgYmctb3BhY2l0eS05MCByb3Vu
+ZGVkLWxnIHNoYWRvdy1sZyBwLTggdy1mdWxsIG1heC13LW1kIj4KICAgIDxo
+MSBjbGFzcz0idGV4dC0yeGwgZm9udC1ib2xkIG1iLTYgdGV4dC1jZW50ZXIg
+dGV4dC1pbmRpZ28tNzAwIj5JbmljaWFyIFNlc2nDs248L2gxPgogICAgPGZv
+cm0gaWQ9ImxvZ2luRm9ybSIgY2xhc3M9InNwYWNlLXktNiIgbm92YWxpZGF0
+ZT4KICAgICAgPGRpdj4KICAgICAgICA8bGFiZWwgZm9yPSJ1c2VybmFtZSIg
+Y2xhc3M9ImJsb2NrIHRleHQtZ3JheS03MDAgZm9udC1zZW1pYm9sZCBtYi0x
+Ij5Vc3VhcmlvPC9sYWJlbD4KICAgICAgICA8aW5wdXQgdHlwZT0idGV4dCIg
+aWQ9InVzZXJuYW1lIiBuYW1lPSJ1c2VybmFtZSIgcmVxdWlyZWQgYXJpYS1y
+ZXF1aXJlZD0idHJ1ZSIgY2xhc3M9InctZnVsbCBweC00IHB5LTIgYm9yZGVy
+IGJvcmRlci1ncmF5LTMwMCByb3VuZGVkIGZvY3VzOm91dGxpbmUtbm9uZSBm
+b2N1czpyaW5nLTIgZm9jdXM6cmluZy1pbmRpZ28tNTAwIiAvPgogICAgICA8
+L2Rpdj4KICAgICAgPGRpdj4KICAgICAgICA8bGFiZWwgZm9yPSJwYXNzd29y
+ZCIgY2xhc3M9ImJsb2NrIHRleHQtZ3JheS03MDAgZm9udC1zZW1pYm9sZCBt
+Yi0xIj5Db250cmFzZcOxYTwvbGFiZWw+CiAgICAgICAgPGlucHV0IHR5cGU9
+InBhc3N3b3JkIiBpZD0icGFzc3dvcmQiIG5hbWU9InBhc3N3b3JkIiByZXF1
+aXJlZCBhcmlhLXJlcXVpcmVkPSJ0cnVlIiBjbGFzcz0idy1mdWxsIHB4LTQg
+cHktMiBib3JkZXIgYm9yZGVyLWdyYXktMzAwIHJvdW5kZWQgZm9jdXM6b3V0
+bGluZS1ub25lIGZvY3VzOnJpbmctMiBmb2N1czpyaW5nLWluZGlnby01MDAi
+IC8+CiAgICAgIDwvZGl2PgogICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIg
+Y2xhc3M9InctZnVsbCBiZy1pbmRpZ28tNjAwIGhvdmVyOmJnLWluZGlnby03
+MDAgdGV4dC13aGl0ZSBmb250LXNlbWlib2xkIHB5LTIgcm91bmRlZCB0cmFu
+c2l0aW9uIj5FbnRyYXI8L2J1dHRvbj4KICAgICAgPHAgaWQ9ImVycm9yTXNn
+IiBjbGFzcz0idGV4dC1yZWQtNjAwIG10LTIgdGV4dC1jZW50ZXIgaGlkZGVu
+IiByb2xlPSJhbGVydCI+PC9wPgogICAgPC9mb3JtPgogIDwvbWFpbj4KICA8
+c2NyaXB0PgogICAgY29uc3QgZm9ybSA9IGRvY3VtZW50LmdldEVsZW1lbnRC
+eUlkKCdsb2dpbkZvcm0nKTsKICAgIGNvbnN0IGVycm9yTXNnID0gZG9jdW1l
+bnQuZ2V0RWxlbWVudEJ5SWQoJ2Vycm9yTXNnJyk7CgogICAgZm9ybS5hZGRF
+dmVudExpc3RlbmVyKCdzdWJtaXQnLCBmdW5jdGlvbihldmVudCkgewogICAg
+ICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOwogICAgICBlcnJvck1zZy5jbGFz
+c0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgICAgY29uc3QgdXNlcm5hbWUgPSBm
+b3JtLnVzZXJuYW1lLnZhbHVlLnRyaW0oKTsKICAgICAgY29uc3QgcGFzc3dv
+cmQgPSBmb3JtLnBhc3N3b3JkLnZhbHVlLnRyaW0oKTsKCiAgICAgIGlmICgh
+dXNlcm5hbWUgfHwgIXBhc3N3b3JkKSB7CiAgICAgICAgZXJyb3JNc2cudGV4
+dENvbnRlbnQgPSAnUG9yIGZhdm9yLCBjb21wbGV0ZSB0b2RvcyBsb3MgY2Ft
+cG9zLic7CiAgICAgICAgZXJyb3JNc2cuY2xhc3NMaXN0LnJlbW92ZSgnaGlk
+ZGVuJyk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CgogICAgICAvLyBWYWxp
+ZGFjacOzbiBiw6FzaWNhOiB1c3VhcmlvICd1c2VyJyB5IGNvbnRyYXNlw7Fh
+ICdwYXNzd29yZDEyMycKICAgICAgaWYgKHVzZXJuYW1lID09PSAndXNlcicg
+JiYgcGFzc3dvcmQgPT09ICdwYXNzd29yZDEyMycpIHsKICAgICAgICAvLyBS
+ZWRpcmlnaXIgYSBkYXNoYm9hcmQKICAgICAgICB3aW5kb3cubG9jYXRpb24u
+aHJlZiA9ICdpbmRleC5odG1sJzsKICAgICAgfSBlbHNlIHsKICAgICAgICBl
+cnJvck1zZy50ZXh0Q29udGVudCA9ICdVc3VhcmlvIG8gY29udHJhc2XDsWEg
+aW5jb3JyZWN0b3MuJzsKICAgICAgICBlcnJvck1zZy5jbGFzc0xpc3QucmVt
+b3ZlKCdoaWRkZW4nKTsKICAgICAgfQogICAgfSk7CiAgPC9zY3JpcHQ+Cjwv
+Ym9keT4KPC9odG1sPg==
