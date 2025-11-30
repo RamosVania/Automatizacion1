@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - Tienda NovaTech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-indigo-700 text-white p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Catálogo de Productos</h1>
+    <button onclick="history.back()" class="bg-white text-indigo-700 font-semibold px-4 py-2 rounded hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      Volver
+    </button>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <section aria-label="Descripción del módulo catálogo de productos">
+      <p class="text-gray-700 text-lg">Aquí puedes explorar y administrar los productos disponibles en la tienda NovaTech. Puedes agregar, editar o eliminar productos para mantener el catálogo actualizado y atractivo para tus clientes.</p>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+<script>
+(function () {
+  function sanitize(txt) {
+    if (!txt) return "";
+    // 1. Eliminar <script>...</script> real
+    txt = txt.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "");
+    // 2. Eliminar &lt;script&gt;…&lt;/script&gt; escapado
+    txt = txt.replace(/&lt;script[^&]*&gt;[\s\S]*?&lt;\/script&gt;/gi, "");
+    // 3. Quitar cualquier cosa entre &lt; ... &gt;
+    txt = txt.replace(/&lt;[^&]+&gt;/g, "");
+    // 4. Quitar cualquier cosa entre <...>
+    txt = txt.replace(/<[^>]+>/g, "");
+    return txt.trim();
+  }
+
+  function cleanText(selector) {
+    var el = document.querySelector(selector);
+    if (!el) return;
+    el.textContent = sanitize(el.textContent);
+  }
+
+  cleanText('header h1');
+  cleanText('main h2');
+})();
+</script>
+
+</body>
+</html>
