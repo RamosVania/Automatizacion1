@@ -1,44 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Checkout y Pagos - Tienda NovaTech</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
-  <header class="bg-indigo-700 text-white p-6 shadow-md flex items-center justify-between">
-    <h1 class="text-2xl font-bold">Checkout y Pagos</h1>
-    <button onclick="window.history.back()" class="bg-white text-indigo-700 font-semibold px-4 py-2 rounded-md hover:bg-indigo-100 transition">Volver</button>
-  </header>
-  <main class="max-w-7xl mx-auto p-6">
-    <p class="text-gray-700 text-lg">Gestiona el proceso de pago y finalización de compras aquí.</p>
-    <section aria-label="Formulario de pago" class="mt-6 max-w-md">
-      <form class="space-y-4">
-        <div>
-          <label for="cardNumber" class="block text-gray-700 font-semibold mb-1">Número de tarjeta</label>
-          <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        </div>
-        <div>
-          <label for="expiryDate" class="block text-gray-700 font-semibold mb-1">Fecha de expiración</label>
-          <input type="month" id="expiryDate" name="expiryDate" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        </div>
-        <div>
-          <label for="cvv" class="block text-gray-700 font-semibold mb-1">CVV</label>
-          <input type="password" id="cvv" name="cvv" maxlength="4" placeholder="123" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        </div>
-        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 rounded-md transition-colors">Pagar</button>
-      </form>
-    </section>
-  </main>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5DaGVja291dCB5IFBhZ29zIC0gVGllbmRhIE5vdmFU
+ZWNoPC90aXRsZT4KICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4udGFpbHdp
+bmRjc3MuY29tIj48L3NjcmlwdD4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iYmct
+Z3JheS01MCBtaW4taC1zY3JlZW4iPgogIDxoZWFkZXIgY2xhc3M9ImJnLWlu
+ZGlnby03MDAgdGV4dC13aGl0ZSBwLTYgc2hhZG93LW1kIGZsZXggaXRlbXMt
+Y2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICA8aDEgY2xhc3M9InRleHQt
+MnhsIGZvbnQtYm9sZCI+Q2hlY2tvdXQgeSBQYWdvczwvaDE+CiAgICA8YnV0
+dG9uIG9uY2xpY2s9IndpbmRvdy5oaXN0b3J5LmJhY2soKSIgY2xhc3M9ImJn
+LXdoaXRlIHRleHQtaW5kaWdvLTcwMCBmb250LXNlbWlib2xkIHB4LTQgcHkt
+MiByb3VuZGVkLW1kIGhvdmVyOmJnLWluZGlnby0xMDAgdHJhbnNpdGlvbiI+
+Vm9sdmVyPC9idXR0b24+CiAgPC9oZWFkZXI+CiAgPG1haW4gY2xhc3M9Im1h
+eC13LTd4bCBteC1hdXRvIHAtNiI+CiAgICA8cCBjbGFzcz0idGV4dC1ncmF5
+LTcwMCB0ZXh0LWxnIj5HZXN0aW9uYSBlbCBwcm9jZXNvIGRlIHBhZ28geSBm
+aW5hbGl6YWNpw7NuIGRlIGNvbXByYXMgYXF1w60uPC9wPgogICAgPHNlY3Rp
+b24gYXJpYS1sYWJlbD0iRm9ybXVsYXJpbyBkZSBwYWdvIiBjbGFzcz0ibXQt
+NiBtYXgtdy1tZCI+CiAgICAgIDxmb3JtIGNsYXNzPSJzcGFjZS15LTQiPgog
+ICAgICAgIDxkaXY+CiAgICAgICAgICA8bGFiZWwgZm9yPSJjYXJkTnVtYmVy
+IiBjbGFzcz0iYmxvY2sgdGV4dC1ncmF5LTcwMCBmb250LXNlbWlib2xkIG1i
+LTEiPk7Dum1lcm8gZGUgdGFyamV0YTwvbGFiZWw+CiAgICAgICAgICA8aW5w
+dXQgdHlwZT0idGV4dCIgaWQ9ImNhcmROdW1iZXIiIG5hbWU9ImNhcmROdW1i
+ZXIiIHBsYWNlaG9sZGVyPSIxMjM0IDU2NzggOTAxMiAzNDU2IiBtYXhsZW5n
+dGg9IjE5IiBjbGFzcz0idy1mdWxsIHB4LTQgcHktMiBib3JkZXIgYm9yZGVy
+LWdyYXktMzAwIHJvdW5kZWQtbWQgZm9jdXM6b3V0bGluZS1ub25lIGZvY3Vz
+OnJpbmctMiBmb2N1czpyaW5nLWluZGlnby01MDAiIC8+CiAgICAgICAgPC9k
+aXY+CiAgICAgICAgPGRpdj4KICAgICAgICAgIDxsYWJlbCBmb3I9ImV4cGly
+eURhdGUiIGNsYXNzPSJibG9jayB0ZXh0LWdyYXktNzAwIGZvbnQtc2VtaWJv
+bGQgbWItMSI+RmVjaGEgZGUgZXhwaXJhY2nDs248L2xhYmVsPgogICAgICAg
+ICAgPGlucHV0IHR5cGU9Im1vbnRoIiBpZD0iZXhwaXJ5RGF0ZSIgbmFtZT0i
+ZXhwaXJ5RGF0ZSIgY2xhc3M9InctZnVsbCBweC00IHB5LTIgYm9yZGVyIGJv
+cmRlci1ncmF5LTMwMCByb3VuZGVkLW1kIGZvY3VzOm91dGxpbmUtbm9uZSBm
+b2N1czpyaW5nLTIgZm9jdXM6cmluZy1pbmRpZ28tNTAwIiAvPgogICAgICAg
+IDwvZGl2PgogICAgICAgIDxkaXY+CiAgICAgICAgICA8bGFiZWwgZm9yPSJj
+dnYiIGNsYXNzPSJibG9jayB0ZXh0LWdyYXktNzAwIGZvbnQtc2VtaWJvbGQg
+bWItMSI+Q1ZWPC9sYWJlbD4KICAgICAgICAgIDxpbnB1dCB0eXBlPSJwYXNz
+d29yZCIgaWQ9ImN2diIgbmFtZT0iY3Z2IiBtYXhsZW5ndGg9IjQiIHBsYWNl
+aG9sZGVyPSIxMjMiIGNsYXNzPSJ3LWZ1bGwgcHgtNCBweS0yIGJvcmRlciBi
+b3JkZXItZ3JheS0zMDAgcm91bmRlZC1tZCBmb2N1czpvdXRsaW5lLW5vbmUg
+Zm9jdXM6cmluZy0yIGZvY3VzOnJpbmctaW5kaWdvLTUwMCIgLz4KICAgICAg
+ICA8L2Rpdj4KICAgICAgICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3M9
+InctZnVsbCBiZy1pbmRpZ28tNjAwIGhvdmVyOmJnLWluZGlnby03MDAgdGV4
+dC13aGl0ZSBmb250LWJvbGQgcHktMiByb3VuZGVkLW1kIHRyYW5zaXRpb24t
+Y29sb3JzIj5QYWdhcjwvYnV0dG9uPgogICAgICA8L2Zvcm0+CiAgICA8L3Nl
+Y3Rpb24+CiAgPC9tYWluPgoKPHNjcmlwdD4KKGZ1bmN0aW9uKCl7CiAgdHJ5
+ewogICAgY29uc3QgcyA9IEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0
+ZW0oJ212cF9zZXNzaW9uJyl8fCdudWxsJyk7CiAgICBpZighcyB8fCAhcy51
+c2VyKXsgbG9jYXRpb24uaHJlZiA9ICcuL2xvZ2luLmh0bWwnOyB9CiAgfWNh
+dGNoKF8peyBsb2NhdGlvbi5ocmVmID0gJy4vbG9naW4uaHRtbCc7IH0KfSko
+KTsKPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg==
