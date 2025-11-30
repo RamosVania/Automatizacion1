@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programación de citas - Clínica Dental Sonrisa Perfecta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-teal-600 text-white p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Programación de citas</h1>
+    <a href="../../index.html" class="bg-white text-teal-600 font-semibold px-4 py-2 rounded hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-teal-400">Volver</a>
+  </header>
+  <main class="flex-grow p-6 max-w-4xl mx-auto">
+    <section>
+      <p class="text-gray-700 text-lg">Aquí puedes gestionar y programar las citas de tus pacientes de forma eficiente y organizada. Próximamente esta sección incluirá funcionalidades completas para administrar horarios, pacientes y recordatorios.</p>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
