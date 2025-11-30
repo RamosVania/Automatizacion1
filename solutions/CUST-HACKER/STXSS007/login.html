@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+  <main class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 max-w-md w-full">
+    <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Iniciar sesión</h1>
+    <form id="loginForm" class="space-y-6" novalidate>
+      <div>
+        <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
+        <input type="text" id="username" name="username" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" autocomplete="username" />
+      </div>
+      <div>
+        <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
+        <input type="password" id="password" name="password" required minlength="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" autocomplete="current-password" />
+      </div>
+      <button type="submit" class="w-full bg-purple-600 text-white font-semibold py-2 rounded hover:bg-purple-700 transition">Entrar</button>
+      <p id="errorMsg" class="text-red-600 mt-2 hidden text-center"></p>
+    </form>
+  </main>
+
+  
+</body>
+</html>
