@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Clínica Dental Sonrisa Perfecta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-teal-400 to-blue-500 min-h-screen flex items-center justify-center">
+    <main class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-6 text-center text-teal-700">Clínica Dental Sonrisa Perfecta</h1>
+        <form id="loginForm" novalidate>
+            <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese su usuario" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 mb-4" autocomplete="username">
+
+            <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400 mb-6" autocomplete="current-password">
+
+            <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 rounded-md transition-colors">Iniciar sesión</button>
+            <p id="errorMsg" class="text-red-600 mt-4 text-center hidden">Por favor, ingrese usuario y contraseña válidos.</p>
+        </form>
+    </main>
+
+
+
+<script>
+(function () {
+  const form =
+    document.getElementById('loginForm') ||
+    document.querySelector('form');
+
+  if (!form) return;
+
+  const userInput =
+    document.getElementById('username') ||
+    document.querySelector('input[type="email"], input[name="email"], input[name="username"]');
+
+  const passInput =
+    document.getElementById('password') ||
+    document.querySelector('input[type="password"], input[name="password"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const user = userInput ? userInput.value.trim() : '';
+    const pass = passInput ? passInput.value.trim() : '';
+
+    if (!user || !pass) {
+      alert('Por favor completa usuario y contraseña.');
+      return;
+    }
+
+    try {
+      localStorage.setItem('mvp_session', JSON.stringify({
+        user: user,
+        at: Date.now()
+      }));
+    } catch (_) {}
+
+    window.location.href = './index.html';
+  });
+})();
+</script>
+</body>
+</html>
