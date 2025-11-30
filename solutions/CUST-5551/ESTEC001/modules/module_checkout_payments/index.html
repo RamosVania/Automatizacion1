@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pago y Checkout - Tienda NovaTech</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-indigo-600 text-white p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Pago y Checkout</h1>
+    <button onclick="history.back()" class="bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-indigo-300">Volver</button>
+  </header>
+  <main class="flex-grow container mx-auto p-6">
+    <p class="text-gray-700 text-lg">Gestiona el proceso de pago y finalización de compras aquí.</p>
+    <!-- Contenido del módulo podría ir aquí -->
+  </main>
+  <footer class="bg-indigo-600 text-white p-4 text-center">
+    &copy; 2024 Tienda NovaTech
+  </footer>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
