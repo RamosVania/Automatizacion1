@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Tienda NovaTech</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 min-h-screen">
+  <header class="bg-indigo-700 text-white p-6 shadow-md">
+    <h1 class="text-2xl font-bold">Tienda NovaTech</h1>
+    <p class="mt-1 text-indigo-200">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
+  </header>
+
+  <main class="p-6 max-w-6xl mx-auto">
+    <h2 class="text-xl font-semibold mb-6 text-indigo-800">Módulos disponibles</h2>
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <!-- Card: Catálogo de Productos -->
+      <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+        <div class="mb-4 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="feather feather-box" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2" ry="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Catálogo de Productos</h3>
+        <p class="text-gray-600">Explora y gestiona el catálogo de productos disponibles en la tienda.</p>
+        <a href="modules/product-catalog/index.html" class="mt-4 inline-block text-indigo-700 font-semibold hover:underline">Ir al módulo</a>
+      </article>
+
+      <!-- Card: Pago y Checkout -->
+      <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+        <div class="mb-4 text-indigo-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="feather feather-credit-card" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Pago y Checkout</h3>
+        <p class="text-gray-600">Gestiona el proceso de pago y finalización de compras de los clientes.</p>
+        <a href="modules/checkout-payments/index.html" class="mt-4 inline-block text-indigo-700 font-semibold hover:underline">Ir al módulo</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-500 text-sm p-4 mt-12">© 2024 Tienda NovaTech</footer>
+
+  <script>
+    feather.replace();
+  </script>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = './login.html'; }
+  }catch(_){ location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
