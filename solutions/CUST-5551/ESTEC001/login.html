@@ -1,67 +1,59 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Tienda NovaTech</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
-  <main class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 w-full max-w-md">
-    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-700">Tienda NovaTech</h1>
-    <form id="loginForm" class="space-y-6" novalidate>
-      <div>
-        <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
-        <input type="text" id="username" name="username" required placeholder="Ingrese su usuario" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <p class="mt-1 text-sm text-red-600 hidden" id="usernameError">Por favor ingrese su usuario.</p>
-      </div>
-      <div>
-        <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
-        <input type="password" id="password" name="password" required placeholder="Ingrese su contraseña" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <p class="mt-1 text-sm text-red-600 hidden" id="passwordError">Por favor ingrese su contraseña.</p>
-      </div>
-      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-md transition">Iniciar sesión</button>
-    </form>
-  </main>
-  
-
-<script>
-(function () {
-  const form =
-    document.getElementById('loginForm') ||
-    document.querySelector('form');
-
-  if (!form) return;
-
-  const userInput =
-    document.getElementById('username') ||
-    document.querySelector('input[type="email"], input[name="email"], input[name="username"]');
-
-  const passInput =
-    document.getElementById('password') ||
-    document.querySelector('input[type="password"], input[name="password"]');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const user = userInput ? userInput.value.trim() : '';
-    const pass = passInput ? passInput.value.trim() : '';
-
-    if (!user || !pass) {
-      alert('Por favor completa usuario y contraseña.');
-      return;
-    }
-
-    try {
-      localStorage.setItem('mvp_session', JSON.stringify({
-        user: user,
-        at: Date.now()
-      }));
-    } catch (_) {}
-
-    window.location.href = './index.html';
-  });
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5Mb2dpbiAtIFRpZW5kYSBOb3ZhVGVjaDwvdGl0bGU+
+CiAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLnRhaWx3aW5kY3NzLmNvbSI+
+PC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHkgY2xhc3M9ImJnLWdyYWRpZW50LXRv
+LXIgZnJvbS1pbmRpZ28tNTAwIHZpYS1wdXJwbGUtNTAwIHRvLXBpbmstNTAw
+IG1pbi1oLXNjcmVlbiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRl
+ciI+CiAgPG1haW4gY2xhc3M9ImJnLXdoaXRlIGJnLW9wYWNpdHktOTAgcm91
+bmRlZC1sZyBzaGFkb3ctbGcgcC04IHctZnVsbCBtYXgtdy1tZCI+CiAgICA8
+aDEgY2xhc3M9InRleHQtM3hsIGZvbnQtYm9sZCBtYi02IHRleHQtY2VudGVy
+IHRleHQtaW5kaWdvLTcwMCI+VGllbmRhIE5vdmFUZWNoPC9oMT4KICAgIDxm
+b3JtIGlkPSJsb2dpbkZvcm0iIGNsYXNzPSJzcGFjZS15LTYiIG5vdmFsaWRh
+dGU+CiAgICAgIDxkaXY+CiAgICAgICAgPGxhYmVsIGZvcj0idXNlcm5hbWUi
+IGNsYXNzPSJibG9jayB0ZXh0LWdyYXktNzAwIGZvbnQtc2VtaWJvbGQgbWIt
+MiI+VXN1YXJpbzwvbGFiZWw+CiAgICAgICAgPGlucHV0IHR5cGU9InRleHQi
+IGlkPSJ1c2VybmFtZSIgbmFtZT0idXNlcm5hbWUiIHJlcXVpcmVkIHBsYWNl
+aG9sZGVyPSJJbmdyZXNlIHN1IHVzdWFyaW8iIGNsYXNzPSJ3LWZ1bGwgcHgt
+NCBweS0yIGJvcmRlciBib3JkZXItZ3JheS0zMDAgcm91bmRlZC1tZCBmb2N1
+czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmctaW5kaWdv
+LTUwMCIgLz4KICAgICAgICA8cCBjbGFzcz0ibXQtMSB0ZXh0LXNtIHRleHQt
+cmVkLTYwMCBoaWRkZW4iIGlkPSJ1c2VybmFtZUVycm9yIj5Qb3IgZmF2b3Ig
+aW5ncmVzZSBzdSB1c3VhcmlvLjwvcD4KICAgICAgPC9kaXY+CiAgICAgIDxk
+aXY+CiAgICAgICAgPGxhYmVsIGZvcj0icGFzc3dvcmQiIGNsYXNzPSJibG9j
+ayB0ZXh0LWdyYXktNzAwIGZvbnQtc2VtaWJvbGQgbWItMiI+Q29udHJhc2XD
+sWE8L2xhYmVsPgogICAgICAgIDxpbnB1dCB0eXBlPSJwYXNzd29yZCIgaWQ9
+InBhc3N3b3JkIiBuYW1lPSJwYXNzd29yZCIgcmVxdWlyZWQgcGxhY2Vob2xk
+ZXI9IkluZ3Jlc2Ugc3UgY29udHJhc2XDsWEiIGNsYXNzPSJ3LWZ1bGwgcHgt
+NCBweS0yIGJvcmRlciBib3JkZXItZ3JheS0zMDAgcm91bmRlZC1tZCBmb2N1
+czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmctaW5kaWdv
+LTUwMCIgLz4KICAgICAgICA8cCBjbGFzcz0ibXQtMSB0ZXh0LXNtIHRleHQt
+cmVkLTYwMCBoaWRkZW4iIGlkPSJwYXNzd29yZEVycm9yIj5Qb3IgZmF2b3Ig
+aW5ncmVzZSBzdSBjb250cmFzZcOxYS48L3A+CiAgICAgIDwvZGl2PgogICAg
+ICA8YnV0dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3M9InctZnVsbCBiZy1pbmRp
+Z28tNjAwIGhvdmVyOmJnLWluZGlnby03MDAgdGV4dC13aGl0ZSBmb250LXNl
+bWlib2xkIHB5LTIgcm91bmRlZC1tZCB0cmFuc2l0aW9uIj5JbmljaWFyIHNl
+c2nDs248L2J1dHRvbj4KICAgIDwvZm9ybT4KICA8L21haW4+CiAgCgo8c2Ny
+aXB0PgooZnVuY3Rpb24gKCkgewogIGNvbnN0IGZvcm0gPQogICAgZG9jdW1l
+bnQuZ2V0RWxlbWVudEJ5SWQoJ2xvZ2luRm9ybScpIHx8CiAgICBkb2N1bWVu
+dC5xdWVyeVNlbGVjdG9yKCdmb3JtJyk7CgogIGlmICghZm9ybSkgcmV0dXJu
+OwoKICBjb25zdCB1c2VySW5wdXQgPQogICAgZG9jdW1lbnQuZ2V0RWxlbWVu
+dEJ5SWQoJ3VzZXJuYW1lJykgfHwKICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0
+b3IoJ2lucHV0W3R5cGU9ImVtYWlsIl0sIGlucHV0W25hbWU9ImVtYWlsIl0s
+IGlucHV0W25hbWU9InVzZXJuYW1lIl0nKTsKCiAgY29uc3QgcGFzc0lucHV0
+ID0KICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwYXNzd29yZCcpIHx8
+CiAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdpbnB1dFt0eXBlPSJwYXNz
+d29yZCJdLCBpbnB1dFtuYW1lPSJwYXNzd29yZCJdJyk7CgogIGZvcm0uYWRk
+RXZlbnRMaXN0ZW5lcignc3VibWl0JywgZnVuY3Rpb24gKGUpIHsKICAgIGUu
+cHJldmVudERlZmF1bHQoKTsKCiAgICBjb25zdCB1c2VyID0gdXNlcklucHV0
+ID8gdXNlcklucHV0LnZhbHVlLnRyaW0oKSA6ICcnOwogICAgY29uc3QgcGFz
+cyA9IHBhc3NJbnB1dCA/IHBhc3NJbnB1dC52YWx1ZS50cmltKCkgOiAnJzsK
+CiAgICBpZiAoIXVzZXIgfHwgIXBhc3MpIHsKICAgICAgYWxlcnQoJ1BvciBm
+YXZvciBjb21wbGV0YSB1c3VhcmlvIHkgY29udHJhc2XDsWEuJyk7CiAgICAg
+IHJldHVybjsKICAgIH0KCiAgICB0cnkgewogICAgICBsb2NhbFN0b3JhZ2Uu
+c2V0SXRlbSgnbXZwX3Nlc3Npb24nLCBKU09OLnN0cmluZ2lmeSh7CiAgICAg
+ICAgdXNlcjogdXNlciwKICAgICAgICBhdDogRGF0ZS5ub3coKQogICAgICB9
+KSk7CiAgICB9IGNhdGNoIChfKSB7fQoKICAgIHdpbmRvdy5sb2NhdGlvbi5o
+cmVmID0gJy4vaW5kZXguaHRtbCc7CiAgfSk7Cn0pKCk7Cjwvc2NyaXB0Pgo8
+L2JvZHk+CjwvaHRtbD4=
