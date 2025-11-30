@@ -1,61 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login - Tienda NovaTech</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-blue-500 to-indigo-600 min-h-screen flex items-center justify-center">
-  <main class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
-    <h1 class="text-2xl font-bold mb-6 text-center text-indigo-700">Iniciar sesión - Tienda NovaTech</h1>
-    <form id="loginForm" class="space-y-6" novalidate>
-      <div>
-        <label for="username" class="block text-gray-700 font-semibold mb-1">Usuario</label>
-        <input type="text" id="username" name="username" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <p class="text-red-600 text-sm mt-1 hidden" id="usernameError">Por favor, ingrese su usuario.</p>
-      </div>
-      <div>
-        <label for="password" class="block text-gray-700 font-semibold mb-1">Contraseña</label>
-        <input type="password" id="password" name="password" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-        <p class="text-red-600 text-sm mt-1 hidden" id="passwordError">Por favor, ingrese su contraseña.</p>
-      </div>
-      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded transition">Entrar</button>
-    </form>
-  </main>
-
-  <script>
-    const form = document.getElementById('loginForm');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-    const usernameError = document.getElementById('usernameError');
-    const passwordError = document.getElementById('passwordError');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      let valid = true;
-
-      if (!usernameInput.value.trim()) {
-        usernameError.classList.remove('hidden');
-        valid = false;
-      } else {
-        usernameError.classList.add('hidden');
-      }
-
-      if (!passwordInput.value.trim()) {
-        passwordError.classList.remove('hidden');
-        valid = false;
-      } else {
-        passwordError.classList.add('hidden');
-      }
-
-      if (valid) {
-        // Simulación de autenticación exitosa
-        // Redirigir a index.html
-        window.location.href = 'index.html';
-      }
-    });
-  </script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgICA8
+bWV0YSBjaGFyc2V0PSJVVEYtOCIgLz4KICAgIDxtZXRhIG5hbWU9InZpZXdw
+b3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2Nh
+bGU9MSIgLz4KICAgIDx0aXRsZT5Mb2dpbiAtIFRpZW5kYSBOb3ZhVGVjaDwv
+dGl0bGU+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4udGFpbHdpbmRj
+c3MuY29tIj48L3NjcmlwdD4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iYmctZ3Jh
+ZGllbnQtdG8tciBmcm9tLWJsdWUtNTAwIHRvLWluZGlnby02MDAgbWluLWgt
+c2NyZWVuIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIj4KICA8
+bWFpbiBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3ctbGcgcC04
+IHctZnVsbCBtYXgtdy1tZCI+CiAgICA8aDEgY2xhc3M9InRleHQtMnhsIGZv
+bnQtYm9sZCBtYi02IHRleHQtY2VudGVyIHRleHQtaW5kaWdvLTcwMCI+SW5p
+Y2lhciBzZXNpw7NuIC0gVGllbmRhIE5vdmFUZWNoPC9oMT4KICAgIDxmb3Jt
+IGlkPSJsb2dpbkZvcm0iIGNsYXNzPSJzcGFjZS15LTYiIG5vdmFsaWRhdGU+
+CiAgICAgIDxkaXY+CiAgICAgICAgPGxhYmVsIGZvcj0idXNlcm5hbWUiIGNs
+YXNzPSJibG9jayB0ZXh0LWdyYXktNzAwIGZvbnQtc2VtaWJvbGQgbWItMSI+
+VXN1YXJpbzwvbGFiZWw+CiAgICAgICAgPGlucHV0IHR5cGU9InRleHQiIGlk
+PSJ1c2VybmFtZSIgbmFtZT0idXNlcm5hbWUiIHJlcXVpcmVkIGNsYXNzPSJ3
+LWZ1bGwgYm9yZGVyIGJvcmRlci1ncmF5LTMwMCByb3VuZGVkIHB4LTMgcHkt
+MiBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3VzOnJpbmct
+aW5kaWdvLTUwMCIgLz4KICAgICAgICA8cCBjbGFzcz0idGV4dC1yZWQtNjAw
+IHRleHQtc20gbXQtMSBoaWRkZW4iIGlkPSJ1c2VybmFtZUVycm9yIj5Qb3Ig
+ZmF2b3IsIGluZ3Jlc2Ugc3UgdXN1YXJpby48L3A+CiAgICAgIDwvZGl2Pgog
+ICAgICA8ZGl2PgogICAgICAgIDxsYWJlbCBmb3I9InBhc3N3b3JkIiBjbGFz
+cz0iYmxvY2sgdGV4dC1ncmF5LTcwMCBmb250LXNlbWlib2xkIG1iLTEiPkNv
+bnRyYXNlw7FhPC9sYWJlbD4KICAgICAgICA8aW5wdXQgdHlwZT0icGFzc3dv
+cmQiIGlkPSJwYXNzd29yZCIgbmFtZT0icGFzc3dvcmQiIHJlcXVpcmVkIGNs
+YXNzPSJ3LWZ1bGwgYm9yZGVyIGJvcmRlci1ncmF5LTMwMCByb3VuZGVkIHB4
+LTMgcHktMiBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6cmluZy0yIGZvY3Vz
+OnJpbmctaW5kaWdvLTUwMCIgLz4KICAgICAgICA8cCBjbGFzcz0idGV4dC1y
+ZWQtNjAwIHRleHQtc20gbXQtMSBoaWRkZW4iIGlkPSJwYXNzd29yZEVycm9y
+Ij5Qb3IgZmF2b3IsIGluZ3Jlc2Ugc3UgY29udHJhc2XDsWEuPC9wPgogICAg
+ICA8L2Rpdj4KICAgICAgPGJ1dHRvbiB0eXBlPSJzdWJtaXQiIGNsYXNzPSJ3
+LWZ1bGwgYmctaW5kaWdvLTYwMCBob3ZlcjpiZy1pbmRpZ28tNzAwIHRleHQt
+d2hpdGUgZm9udC1zZW1pYm9sZCBweS0yIHJvdW5kZWQgdHJhbnNpdGlvbiI+
+RW50cmFyPC9idXR0b24+CiAgICA8L2Zvcm0+CiAgPC9tYWluPgoKICA8c2Ny
+aXB0PgogICAgY29uc3QgZm9ybSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlk
+KCdsb2dpbkZvcm0nKTsKICAgIGNvbnN0IHVzZXJuYW1lSW5wdXQgPSBkb2N1
+bWVudC5nZXRFbGVtZW50QnlJZCgndXNlcm5hbWUnKTsKICAgIGNvbnN0IHBh
+c3N3b3JkSW5wdXQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncGFzc3dv
+cmQnKTsKICAgIGNvbnN0IHVzZXJuYW1lRXJyb3IgPSBkb2N1bWVudC5nZXRF
+bGVtZW50QnlJZCgndXNlcm5hbWVFcnJvcicpOwogICAgY29uc3QgcGFzc3dv
+cmRFcnJvciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwYXNzd29yZEVy
+cm9yJyk7CgogICAgZm9ybS5hZGRFdmVudExpc3RlbmVyKCdzdWJtaXQnLCBm
+dW5jdGlvbihldmVudCkgewogICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgp
+OwoKICAgICAgbGV0IHZhbGlkID0gdHJ1ZTsKCiAgICAgIGlmICghdXNlcm5h
+bWVJbnB1dC52YWx1ZS50cmltKCkpIHsKICAgICAgICB1c2VybmFtZUVycm9y
+LmNsYXNzTGlzdC5yZW1vdmUoJ2hpZGRlbicpOwogICAgICAgIHZhbGlkID0g
+ZmFsc2U7CiAgICAgIH0gZWxzZSB7CiAgICAgICAgdXNlcm5hbWVFcnJvci5j
+bGFzc0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgICAgfQoKICAgICAgaWYgKCFw
+YXNzd29yZElucHV0LnZhbHVlLnRyaW0oKSkgewogICAgICAgIHBhc3N3b3Jk
+RXJyb3IuY2xhc3NMaXN0LnJlbW92ZSgnaGlkZGVuJyk7CiAgICAgICAgdmFs
+aWQgPSBmYWxzZTsKICAgICAgfSBlbHNlIHsKICAgICAgICBwYXNzd29yZEVy
+cm9yLmNsYXNzTGlzdC5hZGQoJ2hpZGRlbicpOwogICAgICB9CgogICAgICBp
+ZiAodmFsaWQpIHsKICAgICAgICAvLyBTaW11bGFjacOzbiBkZSBhdXRlbnRp
+Y2FjacOzbiBleGl0b3NhCiAgICAgICAgLy8gUmVkaXJpZ2lyIGEgaW5kZXgu
+aHRtbAogICAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ2luZGV4Lmh0
+bWwnOwogICAgICB9CiAgICB9KTsKICA8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0
+bWw+
