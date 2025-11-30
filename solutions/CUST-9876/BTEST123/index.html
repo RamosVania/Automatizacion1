@@ -1,51 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clínica Dental Sonrisa Perfecta - Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Scrollbar para cards si exceden */
-    .cards-container::-webkit-scrollbar {
-      height: 8px;
-    }
-    .cards-container::-webkit-scrollbar-thumb {
-      background-color: #14b8a6;
-      border-radius: 4px;
-    }
-  </style>
-</head>
-<body class="bg-gradient-to-r from-teal-400 to-blue-500 min-h-screen flex flex-col">
-  <header class="bg-white shadow p-4 flex items-center justify-between">
-    <h1 class="text-xl font-bold text-teal-700">Clínica Dental Sonrisa Perfecta</h1>
-    <p class="text-teal-600 font-medium">¡Hola! Soy el asistente virtual de Clínica Sonrisa Perfecta</p>
-  </header>
-  <main class="flex-grow p-6">
-    <h2 class="text-2xl font-semibold mb-6 text-white">Dashboard</h2>
-    <section class="cards-container flex space-x-6 overflow-x-auto">
-      <article tabindex="0" class="bg-white rounded-lg shadow-md flex-shrink-0 w-72 p-5 hover:shadow-xl transition-shadow cursor-pointer" onclick="location.href='modules/appointment-scheduling/index.html'" onkeypress="if(event.key==='Enter'){location.href='modules/appointment-scheduling/index.html'}" aria-label="Ir a Programación de Citas">
-        <div class="flex items-center justify-center mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <h3 class="text-lg font-bold text-teal-700 mb-2">Programación de Citas</h3>
-        <p class="text-gray-600">Administre y organice las citas de sus pacientes de forma sencilla y rápida.</p>
-      </article>
-    </section>
-  </main>
-  <footer class="bg-white p-4 text-center text-sm text-teal-700">
-    &copy; 2024 Clínica Dental Sonrisa Perfecta
-  </footer>
-
-<script>
-(function () {
-  try {
-    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
-    if (!s || !s.user) { location.href = './login.html'; }
-  } catch (_) { location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5DbMOtbmljYSBEZW50YWwgU29ucmlzYSBQZXJmZWN0
+YSAtIERhc2hib2FyZDwvdGl0bGU+CiAgPHNjcmlwdCBzcmM9Imh0dHBzOi8v
+Y2RuLnRhaWx3aW5kY3NzLmNvbSI+PC9zY3JpcHQ+CiAgPHN0eWxlPgogICAg
+LyogU2Nyb2xsYmFyIHBhcmEgY2FyZHMgc2kgZXhjZWRlbiAqLwogICAgLmNh
+cmRzLWNvbnRhaW5lcjo6LXdlYmtpdC1zY3JvbGxiYXIgewogICAgICBoZWln
+aHQ6IDhweDsKICAgIH0KICAgIC5jYXJkcy1jb250YWluZXI6Oi13ZWJraXQt
+c2Nyb2xsYmFyLXRodW1iIHsKICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzE0
+YjhhNjsKICAgICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgfQogIDwvc3R5
+bGU+CjwvaGVhZD4KPGJvZHkgY2xhc3M9ImJnLWdyYWRpZW50LXRvLXIgZnJv
+bS10ZWFsLTQwMCB0by1ibHVlLTUwMCBtaW4taC1zY3JlZW4gZmxleCBmbGV4
+LWNvbCI+CiAgPGhlYWRlciBjbGFzcz0iYmctd2hpdGUgc2hhZG93IHAtNCBm
+bGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAgPGgxIGNs
+YXNzPSJ0ZXh0LXhsIGZvbnQtYm9sZCB0ZXh0LXRlYWwtNzAwIj5DbMOtbmlj
+YSBEZW50YWwgU29ucmlzYSBQZXJmZWN0YTwvaDE+CiAgICA8cCBjbGFzcz0i
+dGV4dC10ZWFsLTYwMCBmb250LW1lZGl1bSI+wqFIb2xhISBTb3kgZWwgYXNp
+c3RlbnRlIHZpcnR1YWwgZGUgQ2zDrW5pY2EgU29ucmlzYSBQZXJmZWN0YTwv
+cD4KICA8L2hlYWRlcj4KICA8bWFpbiBjbGFzcz0iZmxleC1ncm93IHAtNiI+
+CiAgICA8aDIgY2xhc3M9InRleHQtMnhsIGZvbnQtc2VtaWJvbGQgbWItNiB0
+ZXh0LXdoaXRlIj5EYXNoYm9hcmQ8L2gyPgogICAgPHNlY3Rpb24gY2xhc3M9
+ImNhcmRzLWNvbnRhaW5lciBmbGV4IHNwYWNlLXgtNiBvdmVyZmxvdy14LWF1
+dG8iPgogICAgICA8YXJ0aWNsZSB0YWJpbmRleD0iMCIgY2xhc3M9ImJnLXdo
+aXRlIHJvdW5kZWQtbGcgc2hhZG93LW1kIGZsZXgtc2hyaW5rLTAgdy03MiBw
+LTUgaG92ZXI6c2hhZG93LXhsIHRyYW5zaXRpb24tc2hhZG93IGN1cnNvci1w
+b2ludGVyIiBvbmNsaWNrPSJsb2NhdGlvbi5ocmVmPSdtb2R1bGVzL2FwcG9p
+bnRtZW50LXNjaGVkdWxpbmcvaW5kZXguaHRtbCciIG9ua2V5cHJlc3M9Imlm
+KGV2ZW50LmtleT09PSdFbnRlcicpe2xvY2F0aW9uLmhyZWY9J21vZHVsZXMv
+YXBwb2ludG1lbnQtc2NoZWR1bGluZy9pbmRleC5odG1sJ30iIGFyaWEtbGFi
+ZWw9IklyIGEgUHJvZ3JhbWFjacOzbiBkZSBDaXRhcyI+CiAgICAgICAgPGRp
+diBjbGFzcz0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgbWIt
+NCI+CiAgICAgICAgICA8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8y
+MDAwL3N2ZyIgY2xhc3M9ImgtMTYgdy0xNiB0ZXh0LXRlYWwtNjAwIiBmaWxs
+PSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZT0iY3VycmVudENv
+bG9yIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgICAgIDxwYXRoIHN0
+cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIg
+c3Ryb2tlLXdpZHRoPSIyIiBkPSJNOCA3VjNtOCA0VjNtLTkgOGgxME01IDIx
+aDE0YTIgMiAwIDAwMi0ydi03YTIgMiAwIDAwLTItMkg1YTIgMiAwIDAwLTIg
+MnY3YTIgMiAwIDAwMiAyeiIgLz4KICAgICAgICAgIDwvc3ZnPgogICAgICAg
+IDwvZGl2PgogICAgICAgIDxoMyBjbGFzcz0idGV4dC1sZyBmb250LWJvbGQg
+dGV4dC10ZWFsLTcwMCBtYi0yIj5Qcm9ncmFtYWNpw7NuIGRlIENpdGFzPC9o
+Mz4KICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTYwMCI+QWRtaW5pc3Ry
+ZSB5IG9yZ2FuaWNlIGxhcyBjaXRhcyBkZSBzdXMgcGFjaWVudGVzIGRlIGZv
+cm1hIHNlbmNpbGxhIHkgcsOhcGlkYS48L3A+CiAgICAgIDwvYXJ0aWNsZT4K
+ICAgIDwvc2VjdGlvbj4KICA8L21haW4+CiAgPGZvb3RlciBjbGFzcz0iYmct
+d2hpdGUgcC00IHRleHQtY2VudGVyIHRleHQtc20gdGV4dC10ZWFsLTcwMCI+
+CiAgICAmY29weTsgMjAyNCBDbMOtbmljYSBEZW50YWwgU29ucmlzYSBQZXJm
+ZWN0YQogIDwvZm9vdGVyPgoKPHNjcmlwdD4KKGZ1bmN0aW9uICgpIHsKICB0
+cnkgewogICAgY29uc3QgcyA9IEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdl
+dEl0ZW0oJ212cF9zZXNzaW9uJykgfHwgJ251bGwnKTsKICAgIGlmICghcyB8
+fCAhcy51c2VyKSB7IGxvY2F0aW9uLmhyZWYgPSAnLi9sb2dpbi5odG1sJzsg
+fQogIH0gY2F0Y2ggKF8pIHsgbG9jYXRpb24uaHJlZiA9ICcuL2xvZ2luLmh0
+bWwnOyB9Cn0pKCk7Cjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4=
