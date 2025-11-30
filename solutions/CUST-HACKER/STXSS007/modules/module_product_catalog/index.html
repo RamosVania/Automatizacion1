@@ -1,43 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Catálogo de Productos - Corp</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 min-h-screen text-gray-100">
-  <header class="bg-indigo-900 bg-opacity-80 p-6 shadow-md flex items-center justify-between">
-    <h1 class="text-2xl font-extrabold">Catálogo de Productos</h1>
-    <button onclick="window.history.back()" class="bg-indigo-700 hover:bg-indigo-800 text-white font-semibold px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400">
-      Volver
-    </button>
-  </header>
-  <main class="p-8 max-w-5xl mx-auto">
-    <section aria-label="Descripción del módulo">
-      <p class="mb-4 text-indigo-200">Este módulo permite explorar y gestionar los productos disponibles en el sistema, facilitando la administración eficiente del catálogo.</p>
-    </section>
-    <section aria-label="Contenido del módulo">
-      <div class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg">
-        <h2 class="text-xl font-semibold mb-3">Lista de Productos</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Producto 1: Descripción breve</li>
-          <li>Producto 2: Descripción breve</li>
-          <li>Producto 3: Descripción breve</li>
-          <li>Producto 4: Descripción breve</li>
-          <li>Producto 5: Descripción breve</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5DYXTDoWxvZ28gZGUgUHJvZHVjdG9zIC0gQ29ycDwv
+dGl0bGU+CiAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLnRhaWx3aW5kY3Nz
+LmNvbSI+PC9zY3JpcHQ+CjwvaGVhZD4KPGJvZHkgY2xhc3M9ImJnLWdyYWRp
+ZW50LXRvLXIgZnJvbS1pbmRpZ28tNjAwIHZpYS1wdXJwbGUtNjAwIHRvLXBp
+bmstNjAwIG1pbi1oLXNjcmVlbiB0ZXh0LWdyYXktMTAwIj4KICA8aGVhZGVy
+IGNsYXNzPSJiZy1pbmRpZ28tOTAwIGJnLW9wYWNpdHktODAgcC02IHNoYWRv
+dy1tZCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWJldHdlZW4iPgogICAg
+PGgxIGNsYXNzPSJ0ZXh0LTJ4bCBmb250LWV4dHJhYm9sZCI+Q2F0w6Fsb2dv
+IGRlIFByb2R1Y3RvczwvaDE+CiAgICA8YnV0dG9uIG9uY2xpY2s9IndpbmRv
+dy5oaXN0b3J5LmJhY2soKSIgY2xhc3M9ImJnLWluZGlnby03MDAgaG92ZXI6
+YmctaW5kaWdvLTgwMCB0ZXh0LXdoaXRlIGZvbnQtc2VtaWJvbGQgcHgtNCBw
+eS0yIHJvdW5kZWQgZm9jdXM6b3V0bGluZS1ub25lIGZvY3VzOnJpbmctMiBm
+b2N1czpyaW5nLWluZGlnby00MDAiPgogICAgICBWb2x2ZXIKICAgIDwvYnV0
+dG9uPgogIDwvaGVhZGVyPgogIDxtYWluIGNsYXNzPSJwLTggbWF4LXctNXhs
+IG14LWF1dG8iPgogICAgPHNlY3Rpb24gYXJpYS1sYWJlbD0iRGVzY3JpcGNp
+w7NuIGRlbCBtw7NkdWxvIj4KICAgICAgPHAgY2xhc3M9Im1iLTQgdGV4dC1p
+bmRpZ28tMjAwIj5Fc3RlIG3Ds2R1bG8gcGVybWl0ZSBleHBsb3JhciB5IGdl
+c3Rpb25hciBsb3MgcHJvZHVjdG9zIGRpc3BvbmlibGVzIGVuIGVsIHNpc3Rl
+bWEsIGZhY2lsaXRhbmRvIGxhIGFkbWluaXN0cmFjacOzbiBlZmljaWVudGUg
+ZGVsIGNhdMOhbG9nby48L3A+CiAgICA8L3NlY3Rpb24+CiAgICA8c2VjdGlv
+biBhcmlhLWxhYmVsPSJDb250ZW5pZG8gZGVsIG3Ds2R1bG8iPgogICAgICA8
+ZGl2IGNsYXNzPSJiZy13aGl0ZSBiZy1vcGFjaXR5LTIwIHJvdW5kZWQtbGcg
+cC02IHNoYWRvdy1sZyI+CiAgICAgICAgPGgyIGNsYXNzPSJ0ZXh0LXhsIGZv
+bnQtc2VtaWJvbGQgbWItMyI+TGlzdGEgZGUgUHJvZHVjdG9zPC9oMj4KICAg
+ICAgICA8dWwgY2xhc3M9Imxpc3QtZGlzYyBsaXN0LWluc2lkZSBzcGFjZS15
+LTIiPgogICAgICAgICAgPGxpPlByb2R1Y3RvIDE6IERlc2NyaXBjacOzbiBi
+cmV2ZTwvbGk+CiAgICAgICAgICA8bGk+UHJvZHVjdG8gMjogRGVzY3JpcGNp
+w7NuIGJyZXZlPC9saT4KICAgICAgICAgIDxsaT5Qcm9kdWN0byAzOiBEZXNj
+cmlwY2nDs24gYnJldmU8L2xpPgogICAgICAgICAgPGxpPlByb2R1Y3RvIDQ6
+IERlc2NyaXBjacOzbiBicmV2ZTwvbGk+CiAgICAgICAgICA8bGk+UHJvZHVj
+dG8gNTogRGVzY3JpcGNpw7NuIGJyZXZlPC9saT4KICAgICAgICA8L3VsPgog
+ICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICA8L21haW4+Cgo8c2NyaXB0
+PgooZnVuY3Rpb24oKXsKICB0cnl7CiAgICBjb25zdCBzID0gSlNPTi5wYXJz
+ZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnbXZwX3Nlc3Npb24nKXx8J251bGwn
+KTsKICAgIGlmKCFzIHx8ICFzLnVzZXIpeyBsb2NhdGlvbi5ocmVmID0gJy4v
+bG9naW4uaHRtbCc7IH0KICB9Y2F0Y2goXyl7IGxvY2F0aW9uLmhyZWYgPSAn
+Li9sb2dpbi5odG1sJzsgfQp9KSgpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0
+bWw+
