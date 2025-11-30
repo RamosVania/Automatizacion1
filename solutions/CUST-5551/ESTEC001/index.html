@@ -1,46 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard - Tienda NovaTech</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
-  <header class="bg-indigo-700 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold">Tienda NovaTech</h1>
-    <p class="mt-1 text-indigo-200">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
-  </header>
-  <main class="p-6 max-w-7xl mx-auto">
-    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition cursor-pointer" onclick="location.href='modules/product-catalog/index.html'" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/product-catalog/index.html'}">
-        <div class="flex items-center space-x-4">
-          <svg class="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18"></path></svg>
-          <div>
-            <h2 class="text-xl font-semibold text-gray-900">Catálogo de Productos</h2>
-            <p class="mt-1 text-gray-600">Explora y administra el catálogo completo de productos.</p>
-          </div>
-        </div>
-      </article>
-      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition cursor-pointer" onclick="location.href='modules/checkout-payments/index.html'" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/checkout-payments/index.html'}">
-        <div class="flex items-center space-x-4">
-          <svg class="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 1.567-3 3.5S10.343 15 12 15s3-1.567 3-3.5S13.657 8 12 8z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414m12.728 0l-1.414-1.414M7.05 7.05L5.636 5.636"></path></svg>
-          <div>
-            <h2 class="text-xl font-semibold text-gray-900">Pago y Checkout</h2>
-            <p class="mt-1 text-gray-600">Gestiona los pagos y el proceso de compra de forma segura.</p>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5EYXNoYm9hcmQgLSBUaWVuZGEgTm92YVRlY2g8L3Rp
+dGxlPgogIDxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi50YWlsd2luZGNzcy5j
+b20iPjwvc2NyaXB0Pgo8L2hlYWQ+Cjxib2R5IGNsYXNzPSJiZy1ncmF5LTUw
+IG1pbi1oLXNjcmVlbiI+CiAgPGhlYWRlciBjbGFzcz0iYmctaW5kaWdvLTcw
+MCB0ZXh0LXdoaXRlIHAtNiBzaGFkb3ctbWQiPgogICAgPGgxIGNsYXNzPSJ0
+ZXh0LTN4bCBmb250LWJvbGQiPlRpZW5kYSBOb3ZhVGVjaDwvaDE+CiAgICA8
+cCBjbGFzcz0ibXQtMSB0ZXh0LWluZGlnby0yMDAiPsKhSG9sYSEgU295IGVs
+IGFzaXN0ZW50ZSB2aXJ0dWFsIGRlIFRpZW5kYSBOb3ZhVGVjaDwvcD4KICA8
+L2hlYWRlcj4KICA8bWFpbiBjbGFzcz0icC02IG1heC13LTd4bCBteC1hdXRv
+Ij4KICAgIDxzZWN0aW9uIGFyaWEtbGFiZWw9Ik3Ds2R1bG9zIGRpc3Bvbmli
+bGVzIiBjbGFzcz0iZ3JpZCBncmlkLWNvbHMtMSBzbTpncmlkLWNvbHMtMiBn
+YXAtNiI+CiAgICAgIDxhcnRpY2xlIGNsYXNzPSJiZy13aGl0ZSByb3VuZGVk
+LWxnIHNoYWRvdy1tZCBwLTYgaG92ZXI6c2hhZG93LXhsIHRyYW5zaXRpb24g
+Y3Vyc29yLXBvaW50ZXIiIG9uY2xpY2s9ImxvY2F0aW9uLmhyZWY9J21vZHVs
+ZXMvcHJvZHVjdC1jYXRhbG9nL2luZGV4Lmh0bWwnIiB0YWJpbmRleD0iMCIg
+b25rZXlwcmVzcz0iaWYoZXZlbnQua2V5PT09J0VudGVyJyl7bG9jYXRpb24u
+aHJlZj0nbW9kdWxlcy9wcm9kdWN0LWNhdGFsb2cvaW5kZXguaHRtbCd9Ij4K
+ICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBzcGFjZS14
+LTQiPgogICAgICAgICAgPHN2ZyBjbGFzcz0idy0xMiBoLTEyIHRleHQtaW5k
+aWdvLTYwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0
+cm9rZS13aWR0aD0iMiIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWhpZGRl
+bj0idHJ1ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48
+cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0i
+cm91bmQiIGQ9Ik0zIDdoMThNMyAxMmgxOE0zIDE3aDE4Ij48L3BhdGg+PC9z
+dmc+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDIgY2xhc3M9InRl
+eHQteGwgZm9udC1zZW1pYm9sZCB0ZXh0LWdyYXktOTAwIj5DYXTDoWxvZ28g
+ZGUgUHJvZHVjdG9zPC9oMj4KICAgICAgICAgICAgPHAgY2xhc3M9Im10LTEg
+dGV4dC1ncmF5LTYwMCI+RXhwbG9yYSB5IGFkbWluaXN0cmEgZWwgY2F0w6Fs
+b2dvIGNvbXBsZXRvIGRlIHByb2R1Y3Rvcy48L3A+CiAgICAgICAgICA8L2Rp
+dj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9hcnRpY2xlPgogICAgICA8YXJ0
+aWNsZSBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3ctbWQgcC02
+IGhvdmVyOnNoYWRvdy14bCB0cmFuc2l0aW9uIGN1cnNvci1wb2ludGVyIiBv
+bmNsaWNrPSJsb2NhdGlvbi5ocmVmPSdtb2R1bGVzL2NoZWNrb3V0LXBheW1l
+bnRzL2luZGV4Lmh0bWwnIiB0YWJpbmRleD0iMCIgb25rZXlwcmVzcz0iaWYo
+ZXZlbnQua2V5PT09J0VudGVyJyl7bG9jYXRpb24uaHJlZj0nbW9kdWxlcy9j
+aGVja291dC1wYXltZW50cy9pbmRleC5odG1sJ30iPgogICAgICAgIDxkaXYg
+Y2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIHNwYWNlLXgtNCI+CiAgICAgICAg
+ICA8c3ZnIGNsYXNzPSJ3LTEyIGgtMTIgdGV4dC1pbmRpZ28tNjAwIiBmaWxs
+PSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIy
+IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGFyaWEtaGlkZGVuPSJ0cnVlIiB4bWxu
+cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIHN0cm9rZS1s
+aW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTEy
+IDhjLTEuNjU3IDAtMyAxLjU2Ny0zIDMuNVMxMC4zNDMgMTUgMTIgMTVzMy0x
+LjU2NyAzLTMuNVMxMy42NTcgOCAxMiA4eiI+PC9wYXRoPjxwYXRoIHN0cm9r
+ZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0i
+TTEyIDN2Mm0wIDE0djJtOS05aC0yTTUgMTJIM20xNS4zNjQtNi4zNjRsLTEu
+NDE0IDEuNDE0TTcuMDUgMTYuOTVsLTEuNDE0IDEuNDE0bTEyLjcyOCAwbC0x
+LjQxNC0xLjQxNE03LjA1IDcuMDVMNS42MzYgNS42MzYiPjwvcGF0aD48L3N2
+Zz4KICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgIDxoMiBjbGFzcz0idGV4
+dC14bCBmb250LXNlbWlib2xkIHRleHQtZ3JheS05MDAiPlBhZ28geSBDaGVj
+a291dDwvaDI+CiAgICAgICAgICAgIDxwIGNsYXNzPSJtdC0xIHRleHQtZ3Jh
+eS02MDAiPkdlc3Rpb25hIGxvcyBwYWdvcyB5IGVsIHByb2Nlc28gZGUgY29t
+cHJhIGRlIGZvcm1hIHNlZ3VyYS48L3A+CiAgICAgICAgICA8L2Rpdj4KICAg
+ICAgICA8L2Rpdj4KICAgICAgPC9hcnRpY2xlPgogICAgPC9zZWN0aW9uPgog
+IDwvbWFpbj4KCjxzY3JpcHQ+CihmdW5jdGlvbigpewogIHRyeXsKICAgIGNv
+bnN0IHMgPSBKU09OLnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdtdnBf
+c2Vzc2lvbicpfHwnbnVsbCcpOwogICAgaWYoIXMgfHwgIXMudXNlcil7IGxv
+Y2F0aW9uLmhyZWYgPSAnLi9sb2dpbi5odG1sJzsgfQogIH1jYXRjaChfKXsg
+bG9jYXRpb24uaHJlZiA9ICcuL2xvZ2luLmh0bWwnOyB9Cn0pKCk7Cjwvc2Ny
+aXB0Pgo8L2JvZHk+CjwvaHRtbD4=
