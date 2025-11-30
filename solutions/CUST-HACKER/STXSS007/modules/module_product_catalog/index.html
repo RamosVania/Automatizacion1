@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos -  Corp</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 min-h-screen text-gray-100 flex flex-col">
+  <header class="bg-indigo-900 bg-opacity-90 p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-2xl font-extrabold">Catálogo de Productos</h1>
+    <a href="../../index.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded transition flex items-center gap-2">
+      <i data-feather="arrow-left"></i> Volver
+    </a>
+  </header>
+  <main class="flex-grow p-8 max-w-6xl mx-auto">
+    <section aria-label="Descripción del módulo">
+      <p class="text-lg bg-white bg-opacity-90 p-6 rounded shadow text-indigo-900">
+        Explora y gestiona el catálogo completo de productos disponibles.
+      </p>
+    </section>
+  </main>
+  
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
