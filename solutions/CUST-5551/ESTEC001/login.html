@@ -1,54 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login - Tienda NovaTech</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
-  <main class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
-    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-700">Tienda NovaTech</h1>
-    <form id="loginForm" novalidate>
-      <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
-      <input type="text" id="username" name="username" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4" placeholder="Ingresa tu usuario" />
-
-      <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
-      <input type="password" id="password" name="password" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4" placeholder="Ingresa tu contraseña" />
-
-      <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-2 rounded-md hover:bg-indigo-700 transition">Iniciar sesión</button>
-      <p id="errorMsg" class="text-red-600 mt-4 text-center hidden">Por favor, ingresa usuario y contraseña válidos.</p>
-    </form>
-  </main>
-
-  <script>
-    const form = document.getElementById('loginForm');
-    const errorMsg = document.getElementById('errorMsg');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const username = form.username.value.trim();
-      const password = form.password.value.trim();
-
-      // Validación básica: usuario y contraseña no vacíos
-      if(username && password) {
-        // Aquí podrías agregar validación real o llamada a API
-        errorMsg.classList.add('hidden');
-        // Redirigir a dashboard
-        window.location.href = 'index.html';
-      } else {
-        errorMsg.classList.remove('hidden');
-      }
-    });
-  </script>
-
-<script>
-document.getElementById('loginForm')?.addEventListener('submit', function(){
-  try{
-    const u = (document.getElementById('username')||{}).value || 'user@example.com';
-    localStorage.setItem('mvp_session', JSON.stringify({user: u, at: Date.now()}));
-  }catch(e){}
-});
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgICA8
+bWV0YSBjaGFyc2V0PSJVVEYtOCIgLz4KICAgIDxtZXRhIG5hbWU9InZpZXdw
+b3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2Nh
+bGU9MSIgLz4KICAgIDx0aXRsZT5Mb2dpbiAtIFRpZW5kYSBOb3ZhVGVjaDwv
+dGl0bGU+CiAgICA8bGluayBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5u
+ZXQvbnBtL3RhaWx3aW5kY3NzQDMuMy4yL2Rpc3QvdGFpbHdpbmQubWluLmNz
+cyIgcmVsPSJzdHlsZXNoZWV0Ij4KPC9oZWFkPgo8Ym9keSBjbGFzcz0iYmct
+Z3JhZGllbnQtdG8tciBmcm9tLWluZGlnby01MDAgdmlhLXB1cnBsZS01MDAg
+dG8tcGluay01MDAgbWluLWgtc2NyZWVuIGZsZXggaXRlbXMtY2VudGVyIGp1
+c3RpZnktY2VudGVyIj4KICA8bWFpbiBjbGFzcz0iYmctd2hpdGUgcm91bmRl
+ZC1sZyBzaGFkb3ctbGcgcC04IHctZnVsbCBtYXgtdy1tZCI+CiAgICA8aDEg
+Y2xhc3M9InRleHQtM3hsIGZvbnQtYm9sZCBtYi02IHRleHQtY2VudGVyIHRl
+eHQtaW5kaWdvLTcwMCI+VGllbmRhIE5vdmFUZWNoPC9oMT4KICAgIDxmb3Jt
+IGlkPSJsb2dpbkZvcm0iIG5vdmFsaWRhdGU+CiAgICAgIDxsYWJlbCBmb3I9
+InVzZXJuYW1lIiBjbGFzcz0iYmxvY2sgdGV4dC1ncmF5LTcwMCBmb250LXNl
+bWlib2xkIG1iLTIiPlVzdWFyaW88L2xhYmVsPgogICAgICA8aW5wdXQgdHlw
+ZT0idGV4dCIgaWQ9InVzZXJuYW1lIiBuYW1lPSJ1c2VybmFtZSIgcmVxdWly
+ZWQgY2xhc3M9InctZnVsbCBweC00IHB5LTIgYm9yZGVyIGJvcmRlci1ncmF5
+LTMwMCByb3VuZGVkLW1kIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpyaW5n
+LTIgZm9jdXM6cmluZy1pbmRpZ28tNTAwIG1iLTQiIHBsYWNlaG9sZGVyPSJJ
+bmdyZXNhIHR1IHVzdWFyaW8iIC8+CgogICAgICA8bGFiZWwgZm9yPSJwYXNz
+d29yZCIgY2xhc3M9ImJsb2NrIHRleHQtZ3JheS03MDAgZm9udC1zZW1pYm9s
+ZCBtYi0yIj5Db250cmFzZcOxYTwvbGFiZWw+CiAgICAgIDxpbnB1dCB0eXBl
+PSJwYXNzd29yZCIgaWQ9InBhc3N3b3JkIiBuYW1lPSJwYXNzd29yZCIgcmVx
+dWlyZWQgY2xhc3M9InctZnVsbCBweC00IHB5LTIgYm9yZGVyIGJvcmRlci1n
+cmF5LTMwMCByb3VuZGVkLW1kIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpy
+aW5nLTIgZm9jdXM6cmluZy1pbmRpZ28tNTAwIG1iLTQiIHBsYWNlaG9sZGVy
+PSJJbmdyZXNhIHR1IGNvbnRyYXNlw7FhIiAvPgoKICAgICAgPGJ1dHRvbiB0
+eXBlPSJzdWJtaXQiIGNsYXNzPSJ3LWZ1bGwgYmctaW5kaWdvLTYwMCB0ZXh0
+LXdoaXRlIGZvbnQtYm9sZCBweS0yIHJvdW5kZWQtbWQgaG92ZXI6YmctaW5k
+aWdvLTcwMCB0cmFuc2l0aW9uIj5JbmljaWFyIHNlc2nDs248L2J1dHRvbj4K
+ICAgICAgPHAgaWQ9ImVycm9yTXNnIiBjbGFzcz0idGV4dC1yZWQtNjAwIG10
+LTQgdGV4dC1jZW50ZXIgaGlkZGVuIj5Qb3IgZmF2b3IsIGluZ3Jlc2EgdXN1
+YXJpbyB5IGNvbnRyYXNlw7FhIHbDoWxpZG9zLjwvcD4KICAgIDwvZm9ybT4K
+ICA8L21haW4+CgogIDxzY3JpcHQ+CiAgICBjb25zdCBmb3JtID0gZG9jdW1l
+bnQuZ2V0RWxlbWVudEJ5SWQoJ2xvZ2luRm9ybScpOwogICAgY29uc3QgZXJy
+b3JNc2cgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZXJyb3JNc2cnKTsK
+CiAgICBmb3JtLmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsIChlKSA9PiB7
+CiAgICAgIGUucHJldmVudERlZmF1bHQoKTsKICAgICAgY29uc3QgdXNlcm5h
+bWUgPSBmb3JtLnVzZXJuYW1lLnZhbHVlLnRyaW0oKTsKICAgICAgY29uc3Qg
+cGFzc3dvcmQgPSBmb3JtLnBhc3N3b3JkLnZhbHVlLnRyaW0oKTsKCiAgICAg
+IC8vIFZhbGlkYWNpw7NuIGLDoXNpY2E6IHVzdWFyaW8geSBjb250cmFzZcOx
+YSBubyB2YWPDrW9zCiAgICAgIGlmKHVzZXJuYW1lICYmIHBhc3N3b3JkKSB7
+CiAgICAgICAgLy8gQXF1w60gcG9kcsOtYXMgYWdyZWdhciB2YWxpZGFjacOz
+biByZWFsIG8gbGxhbWFkYSBhIEFQSQogICAgICAgIGVycm9yTXNnLmNsYXNz
+TGlzdC5hZGQoJ2hpZGRlbicpOwogICAgICAgIC8vIFJlZGlyaWdpciBhIGRh
+c2hib2FyZAogICAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ2luZGV4
+Lmh0bWwnOwogICAgICB9IGVsc2UgewogICAgICAgIGVycm9yTXNnLmNsYXNz
+TGlzdC5yZW1vdmUoJ2hpZGRlbicpOwogICAgICB9CiAgICB9KTsKICA8L3Nj
+cmlwdD4KCjxzY3JpcHQ+CmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2dp
+bkZvcm0nKT8uYWRkRXZlbnRMaXN0ZW5lcignc3VibWl0JywgZnVuY3Rpb24o
+KXsKICB0cnl7CiAgICBjb25zdCB1ID0gKGRvY3VtZW50LmdldEVsZW1lbnRC
+eUlkKCd1c2VybmFtZScpfHx7fSkudmFsdWUgfHwgJ3VzZXJAZXhhbXBsZS5j
+b20nOwogICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ212cF9zZXNzaW9uJywg
+SlNPTi5zdHJpbmdpZnkoe3VzZXI6IHUsIGF0OiBEYXRlLm5vdygpfSkpOwog
+IH1jYXRjaChlKXt9Cn0pOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+
