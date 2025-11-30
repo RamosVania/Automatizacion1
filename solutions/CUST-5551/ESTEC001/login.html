@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tienda NovaTech</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+</head>
+<body class="h-screen bg-gray-100 flex justify-center items-center">
+    <form class="bg-white p-10 rounded-md shadow-md w-1/2">
+        <h2 class="text-2xl font-bold mb-4">Iniciar Sesión</h2>
+        <div class="mb-4">
+            <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Nombre de usuario</label>
+            <input type="text" id="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Nombre de usuario">
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Contraseña</label>
+            <input type="password" id="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Contraseña">
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Iniciar Sesión</button>
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'password') {
+                window.location.href = '/index.html';
+            } else {
+                alert('Credenciales incorrectas');
+            }
+        });
+    </script>
+
+<script>
+document.getElementById('loginForm')?.addEventListener('submit', function(){
+  try{
+    const u = (document.getElementById('username')||{}).value || 'user@example.com';
+    localStorage.setItem('mvp_session', JSON.stringify({user: u, at: Date.now()}));
+  }catch(e){}
+});
+</script>
+</body>
+</html>
