@@ -1,68 +1,100 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard - Academia NovaEdu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-  </style>
-</head>
-<body class="bg-gray-50 min-h-screen">
-  <header class="bg-indigo-700 text-white p-6 shadow-md">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between">
-      <h1 class="text-3xl font-bold">Academia NovaEdu</h1>
-      <p class="mt-2 md:mt-0 text-indigo-200">¡Bienvenido a la plataforma educativa de NovaEdu!</p>
-    </div>
-  </header>
-  <main class="max-w-7xl mx-auto p-6">
-    <section aria-label="Módulos principales" class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Cards -->
-      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='modules/course-management/index.html'" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/course-management/index.html'}" role="button" aria-label="Gestión de cursos">
-        <div class="flex items-center justify-center mb-4">
-          <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479c-.18.923-1.06 1.422-1.96 1.422H7.135c-.9 0-1.78-.5-1.96-1.422a12.083 12.083 0 01.665-6.479L12 14z" />
-          </svg>
-        </div>
-        <h2 class="text-xl font-semibold mb-2 text-indigo-800">Gestión de cursos</h2>
-        <p class="text-gray-600">Administra y organiza los cursos disponibles para los estudiantes.</p>
-      </article>
-
-      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='modules/virtual-classroom/index.html'" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/virtual-classroom/index.html'}" role="button" aria-label="Aula virtual">
-        <div class="flex items-center justify-center mb-4">
-          <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
-          </svg>
-        </div>
-        <h2 class="text-xl font-semibold mb-2 text-indigo-800">Aula virtual</h2>
-        <p class="text-gray-600">Participa en clases en línea y accede a recursos en tiempo real.</p>
-      </article>
-
-      <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='modules/student-portal/index.html'" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/student-portal/index.html'}" role="button" aria-label="Portal del estudiante">
-        <div class="flex items-center justify-center mb-4">
-          <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.75 6.879 2.034M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.071 19.071A10.97 10.97 0 0021 12c0-1.657-.402-3.215-1.121-4.571" />
-          </svg>
-        </div>
-        <h2 class="text-xl font-semibold mb-2 text-indigo-800">Portal del estudiante</h2>
-        <p class="text-gray-600">Accede a tus calificaciones, horarios y materiales de estudio.</p>
-      </article>
-    </section>
-  </main>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5EYXNoYm9hcmQgLSBBY2FkZW1pYSBOb3ZhRWR1PC90
+aXRsZT4KICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4udGFpbHdpbmRjc3Mu
+Y29tIj48L3NjcmlwdD4KICA8bGluayByZWw9InByZWNvbm5lY3QiIGhyZWY9
+Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20iPgogIDxsaW5rIHJlbD0i
+cHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbSIg
+Y3Jvc3NvcmlnaW4+CiAgPHN0eWxlPgogICAgQGltcG9ydCB1cmwoJ2h0dHBz
+Oi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2do
+dEA0MDA7NzAwJmRpc3BsYXk9c3dhcCcpOwogICAgYm9keSB7IGZvbnQtZmFt
+aWx5OiAnSW50ZXInLCBzYW5zLXNlcmlmOyB9CiAgPC9zdHlsZT4KPC9oZWFk
+Pgo8Ym9keSBjbGFzcz0iYmctZ3JheS01MCBtaW4taC1zY3JlZW4iPgogIDxo
+ZWFkZXIgY2xhc3M9ImJnLWluZGlnby03MDAgdGV4dC13aGl0ZSBwLTYgc2hh
+ZG93LW1kIj4KICAgIDxkaXYgY2xhc3M9Im1heC13LTd4bCBteC1hdXRvIGZs
+ZXggZmxleC1jb2wgbWQ6ZmxleC1yb3cgbWQ6aXRlbXMtY2VudGVyIG1kOmp1
+c3RpZnktYmV0d2VlbiI+CiAgICAgIDxoMSBjbGFzcz0idGV4dC0zeGwgZm9u
+dC1ib2xkIj5BY2FkZW1pYSBOb3ZhRWR1PC9oMT4KICAgICAgPHAgY2xhc3M9
+Im10LTIgbWQ6bXQtMCB0ZXh0LWluZGlnby0yMDAiPsKhQmllbnZlbmlkbyBh
+IGxhIHBsYXRhZm9ybWEgZWR1Y2F0aXZhIGRlIE5vdmFFZHUhPC9wPgogICAg
+PC9kaXY+CiAgPC9oZWFkZXI+CiAgPG1haW4gY2xhc3M9Im1heC13LTd4bCBt
+eC1hdXRvIHAtNiI+CiAgICA8c2VjdGlvbiBhcmlhLWxhYmVsPSJNw7NkdWxv
+cyBwcmluY2lwYWxlcyIgY2xhc3M9ImdyaWQgZ2FwLTYgZ3JpZC1jb2xzLTEg
+c206Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMiPgogICAgICA8IS0tIENh
+cmRzIC0tPgogICAgICA8YXJ0aWNsZSBjbGFzcz0iYmctd2hpdGUgcm91bmRl
+ZC1sZyBzaGFkb3ctbWQgcC02IGhvdmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9u
+IGN1cnNvci1wb2ludGVyIiBvbmNsaWNrPSJsb2NhdGlvbi5ocmVmPSdtb2R1
+bGVzL2NvdXJzZS1tYW5hZ2VtZW50L2luZGV4Lmh0bWwnIiB0YWJpbmRleD0i
+MCIgb25rZXlwcmVzcz0iaWYoZXZlbnQua2V5PT09J0VudGVyJyl7bG9jYXRp
+b24uaHJlZj0nbW9kdWxlcy9jb3Vyc2UtbWFuYWdlbWVudC9pbmRleC5odG1s
+J30iIHJvbGU9ImJ1dHRvbiIgYXJpYS1sYWJlbD0iR2VzdGnDs24gZGUgY3Vy
+c29zIj4KICAgICAgICA8ZGl2IGNsYXNzPSJmbGV4IGl0ZW1zLWNlbnRlciBq
+dXN0aWZ5LWNlbnRlciBtYi00Ij4KICAgICAgICAgIDxzdmcgY2xhc3M9Inct
+MTYgaC0xNiB0ZXh0LWluZGlnby02MDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0i
+Y3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHZpZXdCb3g9IjAgMCAy
+NCAyNCIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3Lncz
+Lm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5l
+Y2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTEyIDE0
+bDktNS05LTUtOSA1IDkgNXoiIC8+CiAgICAgICAgICAgIDxwYXRoIHN0cm9r
+ZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0i
+TTEyIDE0bDYuMTYtMy40MjJhMTIuMDgzIDEyLjA4MyAwIDAxLjY2NSA2LjQ3
+OWMtLjE4LjkyMy0xLjA2IDEuNDIyLTEuOTYgMS40MjJINy4xMzVjLS45IDAt
+MS43OC0uNS0xLjk2LTEuNDIyYTEyLjA4MyAxMi4wODMgMCAwMS42NjUtNi40
+NzlMMTIgMTR6IiAvPgogICAgICAgICAgPC9zdmc+CiAgICAgICAgPC9kaXY+
+CiAgICAgICAgPGgyIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2VtaWJvbGQgbWIt
+MiB0ZXh0LWluZGlnby04MDAiPkdlc3Rpw7NuIGRlIGN1cnNvczwvaDI+CiAg
+ICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS02MDAiPkFkbWluaXN0cmEgeSBv
+cmdhbml6YSBsb3MgY3Vyc29zIGRpc3BvbmlibGVzIHBhcmEgbG9zIGVzdHVk
+aWFudGVzLjwvcD4KICAgICAgPC9hcnRpY2xlPgoKICAgICAgPGFydGljbGUg
+Y2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQtbGcgc2hhZG93LW1kIHAtNiBob3Zl
+cjpzaGFkb3ctbGcgdHJhbnNpdGlvbiBjdXJzb3ItcG9pbnRlciIgb25jbGlj
+az0ibG9jYXRpb24uaHJlZj0nbW9kdWxlcy92aXJ0dWFsLWNsYXNzcm9vbS9p
+bmRleC5odG1sJyIgdGFiaW5kZXg9IjAiIG9ua2V5cHJlc3M9ImlmKGV2ZW50
+LmtleT09PSdFbnRlcicpe2xvY2F0aW9uLmhyZWY9J21vZHVsZXMvdmlydHVh
+bC1jbGFzc3Jvb20vaW5kZXguaHRtbCd9IiByb2xlPSJidXR0b24iIGFyaWEt
+bGFiZWw9IkF1bGEgdmlydHVhbCI+CiAgICAgICAgPGRpdiBjbGFzcz0iZmxl
+eCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgbWItNCI+CiAgICAgICAg
+ICA8c3ZnIGNsYXNzPSJ3LTE2IGgtMTYgdGV4dC1pbmRpZ28tNjAwIiBmaWxs
+PSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIy
+IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGFyaWEtaGlkZGVuPSJ0cnVlIiB4bWxu
+cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgICAgICAgICA8
+cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0i
+cm91bmQiIGQ9Ik04IDEwaC4wMU0xMiAxMGguMDFNMTYgMTBoLjAxTTkgMTZo
+Nk0yMSAxMmMwIDQuNDE4LTQuMDMgOC05IDhzLTktMy41ODItOS04IDQuMDMt
+OCA5LTggOSAzLjU4MiA5IDh6IiAvPgogICAgICAgICAgPC9zdmc+CiAgICAg
+ICAgPC9kaXY+CiAgICAgICAgPGgyIGNsYXNzPSJ0ZXh0LXhsIGZvbnQtc2Vt
+aWJvbGQgbWItMiB0ZXh0LWluZGlnby04MDAiPkF1bGEgdmlydHVhbDwvaDI+
+CiAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS02MDAiPlBhcnRpY2lwYSBl
+biBjbGFzZXMgZW4gbMOtbmVhIHkgYWNjZWRlIGEgcmVjdXJzb3MgZW4gdGll
+bXBvIHJlYWwuPC9wPgogICAgICA8L2FydGljbGU+CgogICAgICA8YXJ0aWNs
+ZSBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3ctbWQgcC02IGhv
+dmVyOnNoYWRvdy1sZyB0cmFuc2l0aW9uIGN1cnNvci1wb2ludGVyIiBvbmNs
+aWNrPSJsb2NhdGlvbi5ocmVmPSdtb2R1bGVzL3N0dWRlbnQtcG9ydGFsL2lu
+ZGV4Lmh0bWwnIiB0YWJpbmRleD0iMCIgb25rZXlwcmVzcz0iaWYoZXZlbnQu
+a2V5PT09J0VudGVyJyl7bG9jYXRpb24uaHJlZj0nbW9kdWxlcy9zdHVkZW50
+LXBvcnRhbC9pbmRleC5odG1sJ30iIHJvbGU9ImJ1dHRvbiIgYXJpYS1sYWJl
+bD0iUG9ydGFsIGRlbCBlc3R1ZGlhbnRlIj4KICAgICAgICA8ZGl2IGNsYXNz
+PSJmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBtYi00Ij4KICAg
+ICAgICAgIDxzdmcgY2xhc3M9InctMTYgaC0xNiB0ZXh0LWluZGlnby02MDAi
+IGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lk
+dGg9IjIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgYXJpYS1oaWRkZW49InRydWUi
+IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAg
+ICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVq
+b2luPSJyb3VuZCIgZD0iTTUuMTIxIDE3LjgwNEExMy45MzcgMTMuOTM3IDAg
+MDExMiAxNWMyLjUgMCA0Ljg0Ny43NSA2Ljg3OSAyLjAzNE0xNSAxMWEzIDMg
+MCAxMS02IDAgMyAzIDAgMDE2IDB6IiAvPgogICAgICAgICAgICA8cGF0aCBz
+dHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQi
+IGQ9Ik0xOS4wNzEgMTkuMDcxQTEwLjk3IDEwLjk3IDAgMDAyMSAxMmMwLTEu
+NjU3LS40MDItMy4yMTUtMS4xMjEtNC41NzEiIC8+CiAgICAgICAgICA8L3N2
+Zz4KICAgICAgICA8L2Rpdj4KICAgICAgICA8aDIgY2xhc3M9InRleHQteGwg
+Zm9udC1zZW1pYm9sZCBtYi0yIHRleHQtaW5kaWdvLTgwMCI+UG9ydGFsIGRl
+bCBlc3R1ZGlhbnRlPC9oMj4KICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5
+LTYwMCI+QWNjZWRlIGEgdHVzIGNhbGlmaWNhY2lvbmVzLCBob3JhcmlvcyB5
+IG1hdGVyaWFsZXMgZGUgZXN0dWRpby48L3A+CiAgICAgIDwvYXJ0aWNsZT4K
+ICAgIDwvc2VjdGlvbj4KICA8L21haW4+Cgo8c2NyaXB0PgooZnVuY3Rpb24o
+KXsKICB0cnl7CiAgICBjb25zdCBzID0gSlNPTi5wYXJzZShsb2NhbFN0b3Jh
+Z2UuZ2V0SXRlbSgnbXZwX3Nlc3Npb24nKXx8J251bGwnKTsKICAgIGlmKCFz
+IHx8ICFzLnVzZXIpeyBsb2NhdGlvbi5ocmVmID0gJy4vbG9naW4uaHRtbCc7
+IH0KICB9Y2F0Y2goXyl7IGxvY2F0aW9uLmhyZWYgPSAnLi9sb2dpbi5odG1s
+JzsgfQp9KSgpOwo8L3NjcmlwdD4KPC9ib2R5Pgo8L2h0bWw+
