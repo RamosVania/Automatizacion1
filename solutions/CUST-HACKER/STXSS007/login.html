@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión - &lt;script&gt;alert('HACKED')&lt;/script&gt; Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-indigo-600 min-h-screen flex items-center justify-center">
+  <main class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-6 text-center text-indigo-700">Iniciar sesión</h1>
+    <form id="loginForm" novalidate>
+      <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
+      <input type="text" id="username" name="username" required class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4" />
+
+      <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
+      <input type="password" id="password" name="password" required minlength="4" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-6" />
+
+      <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-2 rounded hover:bg-indigo-700 transition">Entrar</button>
+      <p id="errorMsg" class="text-red-600 mt-4 hidden" role="alert"></p>
+    </form>
+  </main>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      errorMsg.classList.add('hidden');
+
+      const username = form.username.value.trim();
+      const password = form.password.value.trim();
+
+      if (!username || !password) {
+        errorMsg.textContent = 'Por favor, complete todos los campos.';
+        errorMsg.classList.remove('hidden');
+        return;
+      }
+
+      if (password.length < 4) {
+        errorMsg.textContent = 'La contraseña debe tener al menos 4 caracteres.';
+        errorMsg.classList.remove('hidden');
+        return;
+      }
+
+      // Simulación de autenticación básica
+      // Usuario: admin, Contraseña: 1234
+      if (username === 'admin' && password === '1234') {
+        // Redirigir al dashboard
+        window.location.href = 'index.html';
+      } else {
+        errorMsg.textContent = 'Usuario o contraseña incorrectos.';
+        errorMsg.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
