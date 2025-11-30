@@ -1,44 +1,55 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Catálogo de Productos - Tienda NovaTech</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 min-h-screen">
-  <header class="bg-indigo-700 text-white p-6 shadow-md flex items-center justify-between">
-    <h1 class="text-2xl font-bold">Catálogo de Productos</h1>
-    <button onclick="window.history.back()" class="bg-white text-indigo-700 font-semibold px-4 py-2 rounded-md hover:bg-indigo-100 transition">Volver</button>
-  </header>
-  <main class="max-w-7xl mx-auto p-6">
-    <p class="text-gray-700 text-lg">Aquí podrás explorar y administrar los productos disponibles en la tienda.</p>
-    <section aria-label="Ejemplo de productos" class="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <article class="bg-white rounded-lg shadow p-4">
-        <img src="https://images.unsplash.com/photo-1513708928675-5b6b7e3e8a5a?auto=format&fit=crop&w=400&q=80" alt="Producto ejemplo 1" class="rounded-md mb-3 w-full h-40 object-cover" />
-        <h2 class="font-semibold text-lg text-indigo-700">Producto Ejemplo 1</h2>
-        <p class="text-gray-600 mt-1">Descripción breve del producto ejemplo 1.</p>
-      </article>
-      <article class="bg-white rounded-lg shadow p-4">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80" alt="Producto ejemplo 2" class="rounded-md mb-3 w-full h-40 object-cover" />
-        <h2 class="font-semibold text-lg text-indigo-700">Producto Ejemplo 2</h2>
-        <p class="text-gray-600 mt-1">Descripción breve del producto ejemplo 2.</p>
-      </article>
-      <article class="bg-white rounded-lg shadow p-4">
-        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80" alt="Producto ejemplo 3" class="rounded-md mb-3 w-full h-40 object-cover" />
-        <h2 class="font-semibold text-lg text-indigo-700">Producto Ejemplo 3</h2>
-        <p class="text-gray-600 mt-1">Descripción breve del producto ejemplo 3.</p>
-      </article>
-    </section>
-  </main>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgPG1l
+dGEgY2hhcnNldD0iVVRGLTgiIC8+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQi
+IGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0x
+IiAvPgogIDx0aXRsZT5DYXTDoWxvZ28gZGUgUHJvZHVjdG9zIC0gVGllbmRh
+IE5vdmFUZWNoPC90aXRsZT4KICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4u
+dGFpbHdpbmRjc3MuY29tIj48L3NjcmlwdD4KPC9oZWFkPgo8Ym9keSBjbGFz
+cz0iYmctZ3JheS01MCBtaW4taC1zY3JlZW4iPgogIDxoZWFkZXIgY2xhc3M9
+ImJnLWluZGlnby03MDAgdGV4dC13aGl0ZSBwLTYgc2hhZG93LW1kIGZsZXgg
+aXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICA8aDEgY2xhc3M9
+InRleHQtMnhsIGZvbnQtYm9sZCI+Q2F0w6Fsb2dvIGRlIFByb2R1Y3Rvczwv
+aDE+CiAgICA8YnV0dG9uIG9uY2xpY2s9IndpbmRvdy5oaXN0b3J5LmJhY2so
+KSIgY2xhc3M9ImJnLXdoaXRlIHRleHQtaW5kaWdvLTcwMCBmb250LXNlbWli
+b2xkIHB4LTQgcHktMiByb3VuZGVkLW1kIGhvdmVyOmJnLWluZGlnby0xMDAg
+dHJhbnNpdGlvbiI+Vm9sdmVyPC9idXR0b24+CiAgPC9oZWFkZXI+CiAgPG1h
+aW4gY2xhc3M9Im1heC13LTd4bCBteC1hdXRvIHAtNiI+CiAgICA8cCBjbGFz
+cz0idGV4dC1ncmF5LTcwMCB0ZXh0LWxnIj5BcXXDrSBwb2Ryw6FzIGV4cGxv
+cmFyIHkgYWRtaW5pc3RyYXIgbG9zIHByb2R1Y3RvcyBkaXNwb25pYmxlcyBl
+biBsYSB0aWVuZGEuPC9wPgogICAgPHNlY3Rpb24gYXJpYS1sYWJlbD0iRWpl
+bXBsbyBkZSBwcm9kdWN0b3MiIGNsYXNzPSJtdC02IGdyaWQgZ3JpZC1jb2xz
+LTEgc206Z3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTMgZ2FwLTYiPgogICAg
+ICA8YXJ0aWNsZSBjbGFzcz0iYmctd2hpdGUgcm91bmRlZC1sZyBzaGFkb3cg
+cC00Ij4KICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9pbWFnZXMudW5zcGxh
+c2guY29tL3Bob3RvLTE1MTM3MDg5Mjg2NzUtNWI2YjdlM2U4YTVhP2F1dG89
+Zm9ybWF0JmZpdD1jcm9wJnc9NDAwJnE9ODAiIGFsdD0iUHJvZHVjdG8gZWpl
+bXBsbyAxIiBjbGFzcz0icm91bmRlZC1tZCBtYi0zIHctZnVsbCBoLTQwIG9i
+amVjdC1jb3ZlciIgLz4KICAgICAgICA8aDIgY2xhc3M9ImZvbnQtc2VtaWJv
+bGQgdGV4dC1sZyB0ZXh0LWluZGlnby03MDAiPlByb2R1Y3RvIEVqZW1wbG8g
+MTwvaDI+CiAgICAgICAgPHAgY2xhc3M9InRleHQtZ3JheS02MDAgbXQtMSI+
+RGVzY3JpcGNpw7NuIGJyZXZlIGRlbCBwcm9kdWN0byBlamVtcGxvIDEuPC9w
+PgogICAgICA8L2FydGljbGU+CiAgICAgIDxhcnRpY2xlIGNsYXNzPSJiZy13
+aGl0ZSByb3VuZGVkLWxnIHNoYWRvdyBwLTQiPgogICAgICAgIDxpbWcgc3Jj
+PSJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0MjI5MTAy
+Ni03ZWVjMjY0YzI3ZmY/YXV0bz1mb3JtYXQmZml0PWNyb3Amdz00MDAmcT04
+MCIgYWx0PSJQcm9kdWN0byBlamVtcGxvIDIiIGNsYXNzPSJyb3VuZGVkLW1k
+IG1iLTMgdy1mdWxsIGgtNDAgb2JqZWN0LWNvdmVyIiAvPgogICAgICAgIDxo
+MiBjbGFzcz0iZm9udC1zZW1pYm9sZCB0ZXh0LWxnIHRleHQtaW5kaWdvLTcw
+MCI+UHJvZHVjdG8gRWplbXBsbyAyPC9oMj4KICAgICAgICA8cCBjbGFzcz0i
+dGV4dC1ncmF5LTYwMCBtdC0xIj5EZXNjcmlwY2nDs24gYnJldmUgZGVsIHBy
+b2R1Y3RvIGVqZW1wbG8gMi48L3A+CiAgICAgIDwvYXJ0aWNsZT4KICAgICAg
+PGFydGljbGUgY2xhc3M9ImJnLXdoaXRlIHJvdW5kZWQtbGcgc2hhZG93IHAt
+NCI+CiAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNo
+LmNvbS9waG90by0xNTI2MTcwMzc1ODg1LTRkOGVjZjc3Yjk5Zj9hdXRvPWZv
+cm1hdCZmaXQ9Y3JvcCZ3PTQwMCZxPTgwIiBhbHQ9IlByb2R1Y3RvIGVqZW1w
+bG8gMyIgY2xhc3M9InJvdW5kZWQtbWQgbWItMyB3LWZ1bGwgaC00MCBvYmpl
+Y3QtY292ZXIiIC8+CiAgICAgICAgPGgyIGNsYXNzPSJmb250LXNlbWlib2xk
+IHRleHQtbGcgdGV4dC1pbmRpZ28tNzAwIj5Qcm9kdWN0byBFamVtcGxvIDM8
+L2gyPgogICAgICAgIDxwIGNsYXNzPSJ0ZXh0LWdyYXktNjAwIG10LTEiPkRl
+c2NyaXBjacOzbiBicmV2ZSBkZWwgcHJvZHVjdG8gZWplbXBsbyAzLjwvcD4K
+ICAgICAgPC9hcnRpY2xlPgogICAgPC9zZWN0aW9uPgogIDwvbWFpbj4KCjxz
+Y3JpcHQ+CihmdW5jdGlvbigpewogIHRyeXsKICAgIGNvbnN0IHMgPSBKU09O
+LnBhcnNlKGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdtdnBfc2Vzc2lvbicpfHwn
+bnVsbCcpOwogICAgaWYoIXMgfHwgIXMudXNlcil7IGxvY2F0aW9uLmhyZWYg
+PSAnLi9sb2dpbi5odG1sJzsgfQogIH1jYXRjaChfKXsgbG9jYXRpb24uaHJl
+ZiA9ICcuL2xvZ2luLmh0bWwnOyB9Cn0pKCk7Cjwvc2NyaXB0Pgo8L2JvZHk+
+CjwvaHRtbD4=
