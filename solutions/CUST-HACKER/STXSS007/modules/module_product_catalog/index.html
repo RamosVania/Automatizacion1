@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos -  Corp</title>
+  
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-gradient-to-r from-purple-600 to-pink-600 p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-white text-2xl font-bold">Catálogo de Productos</h1>
+    <a href="../../index.html" class="bg-white text-purple-600 font-semibold px-4 py-2 rounded hover:bg-purple-100 transition">Volver</a>
+  </header>
+  <main class="flex-grow p-6">
+    <section aria-label="Descripción del módulo">
+      <p class="text-gray-700 text-lg">Aquí puedes explorar y administrar el catálogo completo de productos disponibles en  Corp.</p>
+    </section>
+    <section aria-label="Imagen representativa" class="mt-6 flex justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-40 w-40 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3V3z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9h18M9 21V9" />
+      </svg>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
