@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Módulo de Catálogo de Productos - Tienda NovaTech</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+   <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-100">
+   <header class="bg-white shadow-md p-4 mb-4">
+      <h1 class="text-lg font-bold">Módulo de Catálogo de Productos</h1>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Volver</button>
+   </header>
+   <main class="max-w-md mx-auto p-8 mb-4 bg-white rounded-lg shadow-md">
+      <h2 class="text-lg font-bold mb-4">Descripción del módulo</h2>
+      <p class="text-gray-700">Contenido del módulo</p>
+   </main>
+   <script>
+      const button = document.querySelector('button');
+      button.addEventListener('click', () => {
+         window.location.href = '/index.html';
+      });
+   </script>
+
+<script>
+(function(){
+  try{
+    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
+    if(!s || !s.user){ location.href = '../../login.html'; }
+  }catch(_){ location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
