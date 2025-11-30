@@ -1,48 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Tienda NovaTech</title>
-    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
-<body class="h-screen bg-gray-100 flex justify-center items-center">
-    <header class="bg-white p-4 shadow-md w-full">
-        <h1 class="text-3xl font-bold mb-4">Dashboard - Tienda NovaTech</h1>
-    </header>
-    <main class="bg-white p-4 shadow-md w-1/2">
-        <h2 class="text-2xl font-bold mb-4">Módulos</h2>
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <div class="bg-white p-4 shadow-md rounded-md">
-                <h3 class="text-lg font-bold mb-2">Módulo de Catálogo de Productos</h3>
-                <p class="text-gray-700 text-sm mb-4">Descripción del módulo de catálogo de productos.</p>
-                <img src="/assets/logo.svg" alt="Logo de Tienda NovaTech">
-            </div>
-            <div class="bg-white p-4 shadow-md rounded-md">
-                <h3 class="text-lg font-bold mb-2">Módulo de Pagos</h3>
-                <p class="text-gray-700 text-sm mb-4">Descripción del módulo de pagos.</p>
-                <img src="/assets/logo.svg" alt="Logo de Tienda NovaTech">
-            </div>
-        </div>
-    </main>
-    <script>
-        const cards = document.querySelectorAll('.bg-white');
-        cards.forEach((card) => {
-            card.addEventListener('click', () => {
-                const slug = card.querySelector('h3').textContent.replace('Módulo de ', '').replace(' de Productos', '').replace(' de Pagos', '');
-                window.location.href = `/${slug}/index.html`; // Reemplaza con la ruta correcta
-            });
-        });
-    </script>
-
-<script>
-(function(){
-  try{
-    const s = JSON.parse(localStorage.getItem('mvp_session')||'null');
-    if(!s || !s.user){ location.href = './login.html'; }
-  }catch(_){ location.href = './login.html'; }
-})();
-</script>
-</body>
-</html>
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVzIj4KPGhlYWQ+CiAgICA8
+bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9y
+dCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxl
+PTEuMCI+CiAgICA8dGl0bGU+RGFzaGJvYXJkIC0gVGllbmRhIE5vdmFUZWNo
+PC90aXRsZT4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0
+cHM6Ly9jZG4udGFpbHdpbmRjc3MuY29tIj4KICAgIDxsaW5rIHJlbD0ic3R5
+bGVzaGVldCIgaHJlZj0iL2Fzc2V0cy9zdHlsZXMuY3NzIj4KPC9oZWFkPgo8
+Ym9keSBjbGFzcz0iaC1zY3JlZW4gYmctZ3JheS0xMDAgZmxleCBqdXN0aWZ5
+LWNlbnRlciBpdGVtcy1jZW50ZXIiPgogICAgPGhlYWRlciBjbGFzcz0iYmct
+d2hpdGUgcC00IHNoYWRvdy1tZCB3LWZ1bGwiPgogICAgICAgIDxoMSBjbGFz
+cz0idGV4dC0zeGwgZm9udC1ib2xkIG1iLTQiPkRhc2hib2FyZCAtIFRpZW5k
+YSBOb3ZhVGVjaDwvaDE+CiAgICA8L2hlYWRlcj4KICAgIDxtYWluIGNsYXNz
+PSJiZy13aGl0ZSBwLTQgc2hhZG93LW1kIHctMS8yIj4KICAgICAgICA8aDIg
+Y2xhc3M9InRleHQtMnhsIGZvbnQtYm9sZCBtYi00Ij5Nw7NkdWxvczwvaDI+
+CiAgICAgICAgPGRpdiBjbGFzcz0iZ3JpZCBncmlkLWNvbHMtMSBnYXAtNCBt
+ZDpncmlkLWNvbHMtMiBsZzpncmlkLWNvbHMtMyI+CiAgICAgICAgICAgIDxk
+aXYgY2xhc3M9ImJnLXdoaXRlIHAtNCBzaGFkb3ctbWQgcm91bmRlZC1tZCI+
+CiAgICAgICAgICAgICAgICA8aDMgY2xhc3M9InRleHQtbGcgZm9udC1ib2xk
+IG1iLTIiPk3Ds2R1bG8gZGUgQ2F0w6Fsb2dvIGRlIFByb2R1Y3RvczwvaDM+
+CiAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1ncmF5LTcwMCB0ZXh0
+LXNtIG1iLTQiPkRlc2NyaXBjacOzbiBkZWwgbcOzZHVsbyBkZSBjYXTDoWxv
+Z28gZGUgcHJvZHVjdG9zLjwvcD4KICAgICAgICAgICAgICAgIDxpbWcgc3Jj
+PSIvYXNzZXRzL2xvZ28uc3ZnIiBhbHQ9IkxvZ28gZGUgVGllbmRhIE5vdmFU
+ZWNoIj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xh
+c3M9ImJnLXdoaXRlIHAtNCBzaGFkb3ctbWQgcm91bmRlZC1tZCI+CiAgICAg
+ICAgICAgICAgICA8aDMgY2xhc3M9InRleHQtbGcgZm9udC1ib2xkIG1iLTIi
+Pk3Ds2R1bG8gZGUgUGFnb3M8L2gzPgogICAgICAgICAgICAgICAgPHAgY2xh
+c3M9InRleHQtZ3JheS03MDAgdGV4dC1zbSBtYi00Ij5EZXNjcmlwY2nDs24g
+ZGVsIG3Ds2R1bG8gZGUgcGFnb3MuPC9wPgogICAgICAgICAgICAgICAgPGlt
+ZyBzcmM9Ii9hc3NldHMvbG9nby5zdmciIGFsdD0iTG9nbyBkZSBUaWVuZGEg
+Tm92YVRlY2giPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4K
+ICAgIDwvbWFpbj4KICAgIDxzY3JpcHQ+CiAgICAgICAgY29uc3QgY2FyZHMg
+PSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcuYmctd2hpdGUnKTsKICAg
+ICAgICBjYXJkcy5mb3JFYWNoKChjYXJkKSA9PiB7CiAgICAgICAgICAgIGNh
+cmQuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiB7CiAgICAgICAg
+ICAgICAgICBjb25zdCBzbHVnID0gY2FyZC5xdWVyeVNlbGVjdG9yKCdoMycp
+LnRleHRDb250ZW50LnJlcGxhY2UoJ03Ds2R1bG8gZGUgJywgJycpLnJlcGxh
+Y2UoJyBkZSBQcm9kdWN0b3MnLCAnJykucmVwbGFjZSgnIGRlIFBhZ29zJywg
+JycpOwogICAgICAgICAgICAgICAgd2luZG93LmxvY2F0aW9uLmhyZWYgPSBg
+LyR7c2x1Z30vaW5kZXguaHRtbGA7IC8vIFJlZW1wbGF6YSBjb24gbGEgcnV0
+YSBjb3JyZWN0YQogICAgICAgICAgICB9KTsKICAgICAgICB9KTsKICAgIDwv
+c2NyaXB0PgoKPHNjcmlwdD4KKGZ1bmN0aW9uKCl7CiAgdHJ5ewogICAgY29u
+c3QgcyA9IEpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ212cF9z
+ZXNzaW9uJyl8fCdudWxsJyk7CiAgICBpZighcyB8fCAhcy51c2VyKXsgbG9j
+YXRpb24uaHJlZiA9ICcuL2xvZ2luLmh0bWwnOyB9CiAgfWNhdGNoKF8peyBs
+b2NhdGlvbi5ocmVmID0gJy4vbG9naW4uaHRtbCc7IH0KfSkoKTsKPC9zY3Jp
+cHQ+CjwvYm9keT4KPC9odG1sPg==
