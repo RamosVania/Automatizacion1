@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Tienda NovaTech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <header class="bg-indigo-700 text-white p-6 shadow-md">
+        <h1 class="text-3xl font-bold">Tienda NovaTech</h1>
+        <p class="mt-1 text-indigo-200">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
+    </header>
+    <main class="p-6 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-800">Panel de módulos</h2>
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Card módulo catálogo de productos -->
+            <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='modules/module_product_catalog/index.html'" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/module_product_catalog/index.html'}">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+                    </svg>
+                    <h3 class="ml-4 text-xl font-semibold text-gray-900">Catálogo de Productos</h3>
+                </div>
+                <p class="text-gray-600">Explora y administra el catálogo de productos disponibles en la tienda.</p>
+            </article>
+
+            <!-- Card módulo pagos y checkout -->
+            <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" onclick="location.href='modules/module_checkout_payments/index.html'" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/module_checkout_payments/index.html'}">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v4h6v-4c0-1.657-1.343-3-3-3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v4m0 0h6m-6 0H6" />
+                    </svg>
+                    <h3 class="ml-4 text-xl font-semibold text-gray-900">Pagos y Checkout</h3>
+                </div>
+                <p class="text-gray-600">Gestiona el proceso de pago y finalización de compras de los clientes.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
