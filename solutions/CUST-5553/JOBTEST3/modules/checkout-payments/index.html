@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagos y Checkout - Tienda Stress 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen font-sans text-gray-900">
+  <header class="bg-white bg-opacity-90 shadow-md py-6">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-pink-700">Pagos y Checkout</h1>
+      <a href="../../index.html" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded-md transition">Volver</a>
+    </div>
+  </header>
+  <main class="container mx-auto px-6 py-10">
+    <section aria-label="Descripción del módulo">
+      <p class="text-lg text-gray-800">Gestiona las opciones de pago y procesa las compras de forma segura en Tienda Stress 3. Configura métodos de pago, revisa transacciones y asegura una experiencia de compra confiable para tus clientes.</p>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
