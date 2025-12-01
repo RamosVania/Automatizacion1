@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de productos - Tienda Stress 14</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 min-h-screen text-gray-900">
+  <header class="bg-white bg-opacity-90 backdrop-blur-md shadow-md py-4 px-6 flex items-center justify-between">
+    <h1 class="text-3xl font-bold text-purple-900">Catálogo de productos</h1>
+    <a href="../../index.html" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded transition">Volver</a>
+  </header>
+  <main class="container mx-auto px-6 py-8">
+    <p class="text-lg">Aquí podrás explorar y administrar todos los productos disponibles en Tienda Stress 14.</p>
+    <section class="mt-8">
+      <p class="text-gray-700">(Contenido del módulo en desarrollo)</p>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
