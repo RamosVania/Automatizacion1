@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Null Pointer Inc1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="bg-indigo-700 text-white p-6 shadow-md">
+    <h1 class="text-3xl font-bold">Null Pointer Inc1</h1>
+    <p class="mt-1 text-indigo-200">Hola</p>
+  </header>
+  <main class="p-6 max-w-7xl mx-auto">
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition cursor-pointer" tabindex="0" role="link" onclick="location.href='modules/test/index.html'" onkeypress="if(event.key==='Enter'){location.href='modules/test/index.html'}">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-indigo-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-3-3v6m-7 4h14a2 2 0 002-2v-5a2 2 0 00-2-2h-4l-2-3-2 3H5a2 2 0 00-2 2v5a2 2 0 002 2z" />
+        </svg>
+        <h2 class="text-xl font-semibold mb-2">module_test</h2>
+        <p class="text-gray-600">Módulo de prueba para demostración.</p>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
