@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - Tienda Stress 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-purple-700 text-white p-6 shadow-md flex items-center justify-between">
+    <h1 class="text-2xl font-bold">Catálogo de Productos</h1>
+    <button onclick="history.back()" class="bg-purple-600 hover:bg-purple-800 transition text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+      Volver
+    </button>
+  </header>
+  <main class="p-6 flex-grow max-w-7xl mx-auto">
+    <section aria-label="Descripción del módulo">
+      <p class="text-gray-700 text-lg">Aquí puedes explorar y gestionar los productos disponibles en la tienda. Esta sección está diseñada para facilitar la administración del catálogo de productos.</p>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
