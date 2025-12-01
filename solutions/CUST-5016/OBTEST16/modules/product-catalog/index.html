@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Productos - Tienda Stress 16</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen text-gray-900">
+    <header class="bg-white bg-opacity-90 shadow-md py-6">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <h1 class="text-2xl font-bold">Catálogo de Productos</h1>
+            <button onclick="location.href='../../index.html'" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-md transition">Volver</button>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-10">
+        <p class="text-white text-lg">Aquí podrás gestionar y visualizar el catálogo de productos de Tienda Stress 16.</p>
+    </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
