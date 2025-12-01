@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - Tienda Stress 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-700 via-pink-700 to-red-700 min-h-screen text-gray-100">
+  <header class="bg-white bg-opacity-20 backdrop-blur-md shadow-md p-6 flex items-center justify-between">
+    <h1 class="text-2xl font-extrabold">Catálogo de Productos</h1>
+    <button onclick="window.history.back()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400">Volver</button>
+  </header>
+  <main class="p-6">
+    <section class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+      <h2 class="text-xl font-semibold mb-4 text-purple-800">Gestión del Catálogo</h2>
+      <p class="text-gray-700">Aquí podrás explorar, agregar, editar y eliminar productos de la tienda. Esta sección está diseñada para facilitar la administración eficiente del inventario y mantener actualizado el catálogo para los clientes.</p>
+      <img src="../../assets/product_catalog.svg" alt="Icono catálogo de productos" class="mt-6 mx-auto max-w-xs" />
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = '../../login.html'; }
+  } catch (_) { location.href = '../../login.html'; }
+})();
+</script>
+</body>
+</html>
