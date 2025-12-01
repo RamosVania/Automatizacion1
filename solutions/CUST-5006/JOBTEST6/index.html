@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Tienda Stress 6</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen">
+  <header class="bg-white bg-opacity-90 shadow-md py-6">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <h1 class="text-3xl font-bold text-purple-700">Tienda Stress 6</h1>
+      <p class="text-purple-600 font-semibold">¡Hola! Bienvenido a Tienda Stress 6</p>
+    </div>
+  </header>
+  <main class="container mx-auto px-6 py-10">
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <article class="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-purple-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m1-18h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V3a2 2 0 012-2z" />
+        </svg>
+        <h2 class="text-xl font-semibold mb-2">Catálogo de Productos</h2>
+        <p class="text-gray-700">Explora y administra los productos disponibles en la tienda.</p>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
