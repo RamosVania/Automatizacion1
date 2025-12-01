@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Tienda Stress 8</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 min-h-screen text-gray-100">
+  <header class="bg-purple-900 bg-opacity-80 p-6 shadow-md">
+    <h1 class="text-4xl font-extrabold text-center">¡Hola! Bienvenido a Tienda Stress 8</h1>
+  </header>
+  <main class="max-w-7xl mx-auto p-6">
+    <section aria-label="Módulos disponibles" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <article class="bg-white bg-opacity-20 rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform cursor-pointer" tabindex="0" role="link" onclick="location.href='modules/product-catalog/index.html'" onkeypress="if(event.key==='Enter'){location.href='modules/product-catalog/index.html'}">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mb-4 text-pink-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18" />
+        </svg>
+        <h2 class="text-2xl font-semibold mb-2">Catálogo de Productos</h2>
+        <p class="text-sm max-w-xs">Explora y administra el catálogo completo de productos disponibles en la tienda.</p>
+      </article>
+    </section>
+  </main>
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
