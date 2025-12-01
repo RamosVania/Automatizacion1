@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Tienda Stress 8</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+  <main class="bg-white bg-opacity-90 rounded-lg shadow-lg p-8 w-full max-w-md">
+    <h1 class="text-3xl font-bold mb-6 text-center text-purple-700">Tienda Stress 8</h1>
+    <form id="loginForm" class="space-y-6" novalidate>
+      <div>
+        <label for="username" class="block text-gray-700 font-semibold mb-2">Usuario</label>
+        <input type="text" id="username" name="username" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        <p class="mt-1 text-sm text-red-600 hidden" id="usernameError">Por favor ingresa tu usuario.</p>
+      </div>
+      <div>
+        <label for="password" class="block text-gray-700 font-semibold mb-2">Contraseña</label>
+        <input type="password" id="password" name="password" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        <p class="mt-1 text-sm text-red-600 hidden" id="passwordError">Por favor ingresa tu contraseña.</p>
+      </div>
+      <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded-md transition">Iniciar sesión</button>
+    </form>
+  </main>
+  
+
+<script>
+(function () {
+  const form =
+    document.getElementById('loginForm') ||
+    document.querySelector('form');
+
+  if (!form) return;
+
+  const userInput =
+    document.getElementById('username') ||
+    document.querySelector('input[type="email"], input[name="email"], input[name="username"]');
+
+  const passInput =
+    document.getElementById('password') ||
+    document.querySelector('input[type="password"], input[name="password"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const user = userInput ? userInput.value.trim() : '';
+    const pass = passInput ? passInput.value.trim() : '';
+
+    if (!user || !pass) {
+      alert('Por favor completa usuario y contraseña.');
+      return;
+    }
+
+    try {
+      localStorage.setItem('mvp_session', JSON.stringify({
+        user: user,
+        at: Date.now()
+      }));
+    } catch (_) {}
+
+    window.location.href = './index.html';
+  });
+})();
+</script>
+</body>
+</html>
