@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Tienda NovaTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-600 min-h-screen text-gray-100">
+    <header class="bg-indigo-800 shadow p-6">
+        <h1 class="text-3xl font-bold">Tienda NovaTech</h1>
+        <p class="mt-1 text-indigo-300">¡Hola! Soy el asistente virtual de Tienda NovaTech</p>
+    </header>
+    <main class="p-6 max-w-7xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-6">Panel de módulos</h2>
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Módulo Catálogo de Productos -->
+            <article class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg hover:shadow-xl transition cursor-pointer" onclick="location.href='modules/product-catalog/index.html'" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/product-catalog/index.html';}">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-indigo-700 rounded-lg">
+                        <i data-feather="box" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Catálogo de Productos</h3>
+                        <p class="mt-1 text-indigo-200">Explora y administra los productos disponibles en la tienda.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Módulo Checkout y Pagos -->
+            <article class="bg-white bg-opacity-20 rounded-lg p-6 shadow-lg hover:shadow-xl transition cursor-pointer" onclick="location.href='modules/checkout-payments/index.html'" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){location.href='modules/checkout-payments/index.html';}">
+                <div class="flex items-center space-x-4">
+                    <div class="p-3 bg-pink-700 rounded-lg">
+                        <i data-feather="credit-card" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Checkout y Pagos</h3>
+                        <p class="mt-1 text-pink-200">Gestiona el proceso de compra y los métodos de pago.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+
+<script>
+(function () {
+  try {
+    const s = JSON.parse(localStorage.getItem('mvp_session') || 'null');
+    if (!s || !s.user) { location.href = './login.html'; }
+  } catch (_) { location.href = './login.html'; }
+})();
+</script>
+</body>
+</html>
